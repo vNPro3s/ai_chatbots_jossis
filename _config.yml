@@ -20,11 +20,14 @@ author: Ante Panjkota
 ###############################################
 
 navbar-links:
-  Lecture materials: "aboutme"
+  Lecture materials: "intro"
   Notebooks: "notebooks"
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
+    - LangChain: "https://www.langchain.com/"
+    - Ollama: "https://ollama.com/"
+    - OpenAI: "https://openai.com/"
+    - Claude.ai: "https://claude.ai/"
+    
   
 
 ################
@@ -101,7 +104,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"
+# url-pretty: "MyWebsite.com"
 
 # Add the website title to the title of every page
 title-on-all-pages: true
@@ -259,7 +262,7 @@ date_format: "%B %-d, %Y"
 #################################################################################
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Toronto"
+timezone: "Europe/Zagreb"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
