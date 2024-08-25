@@ -1,3 +1,15 @@
+---
+layout: post
+title: Short introduction to course
+subtitle: AI ChatBots
+gh-repo: daattali/beautiful-jekyll
+gh-badge: [star, fork, follow]
+tags: [test]
+comments: false
+mathjax: true
+author: A. Panjkota
+---
+
 # Introduction
 
 {: .box-success} Some intro related to the course that will be taught in JOSSIS 2024...
