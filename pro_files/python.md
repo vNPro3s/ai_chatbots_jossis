@@ -4,7 +4,7 @@ title: Python Tutorial
 subtitle: Concise Introduction to Python
 ---
 
-# Python Tutorial
+# Python
 
 Before starting with a concise Python tutorial, we will explain why students with non-technical profiles need to know some Python fundamentals when taking courses on AI ChatBots. 
 
