@@ -20,7 +20,7 @@ author: Ante Panjkota
 ###############################################
 
 navbar-links:
-  Lecture materials: "intro"
+  Lecture materials: "./pro_files/lecture_materials"
   Notebooks: "notebooks"
   Resources:
     - LangChain: "https://www.langchain.com/"
