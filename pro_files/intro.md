@@ -72,7 +72,7 @@ In functions, parameters can be any regular type. By regular type, we mean gener
 
  Why are basic data types essential? The answer is simple: the computer needs to know how to save a particular type in memory. The type also defines allowed operations or, more straightforwardly, data manipulation.
 
- ###Strings
+###Strings
 
  We will introduce the notion of a variable here. The variable is a reference to the memory location for storing data.
 
@@ -311,6 +311,7 @@ This generic form can be presented with the flow diagram in Figure 2:
 
 
 ![if-then]
+
 **Figure 2** Flow diagram for IF-THEN
 
 
@@ -332,6 +333,7 @@ More often, if-else statements are in use. A code block after the ELSE part will
 
 
 ![if-else]
+
 **Figure 3** Flow diagram for IF-ELSE
 
 
@@ -354,6 +356,7 @@ In situations where there is a need for more conditions to check if-else, if-els
 
 
 ![if-elseif]
+
 **Figure 4** Flow diagram for chained IF-ELSEIF-ELSE
 
 
@@ -419,11 +422,12 @@ All Built-in types and functions are well documented in Python Standard Library 
 
 </div>
 
-<center>
+
 
 ![range]
+
 **Figure 5** Part of the documentation for built-in type ranges
-</center>
+
 
 ***Example*** Print one by one character in arbitrary string entered by user.
 
@@ -472,6 +476,7 @@ The for loop can be conceptualized with the flow diagram in Figure 6.
 
 
 ![forLoop]
+
 **Figure 6** For loop conceptual flow diagram
 
 
@@ -542,10 +547,11 @@ Other types of loop are also common in Python &rarr; the `while loop.` When a nu
 
 
 ![whileLoop]
+
 **Figure 7** Flow diagram for while loop
 
 
-</div>
+
 
 <div class="alert alert-danger" role = "alert">
 <i class="fa fa-thermometer-full" style="font-size:24px; font-weight:bold"> Warning </i>
