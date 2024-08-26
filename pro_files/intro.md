@@ -8,16 +8,15 @@ subtitle: Python tutorial - part I
 
 <div style="text-align:justify">
 
-<span style="color:blue;font-family:Consolas; font-size:11pt;">
 
 
-As the old proverb said,  "Tell me, and I'll forget; show me, and I may remember; involve me, and I'll understand". So, there is no better way to start this relatively short introduction to the Python programming language than with examples. Our motivation is straightforward because many of the contemporary methods in NLP are supported with solutions written in Python programming language.
+As the old proverb said,  "Tell me, and I'll forget; show me, and I may remember; involve me, and I'll understand." So, there is no better way to start this relatively short introduction to the Python programming language than with examples. Our motivation is straightforward because many of NLP's contemporary methods are supported by Python solutions.
 
 ```Python
-#### this is a simple comment in Python
-#### comments are not executed
-#### usually they clarify code or emphasize something important
-#### hashtag sign are preceding comment text
+# this is a simple comment in Python
+# comments are not executed
+# usually they clarify code or emphasize something important
+# hashtag sign are preceding comment text
 
 print("This is a message from python!")
 ```
@@ -39,7 +38,7 @@ This is a message from python!
 
 ## Functions
 
-Here can be noticed **print**, which is an embedded Python function. As its name already suggests, the print function produced a direct output of argument message to the screen or other standard output device. We will talk about functions in more depth, but for now, it can be realized as specialized workers for a particular job (see figure 1).
+Here, ** print ** can be noticed, which is an embedded Python function. As its name suggests, the print function produces a direct output of the argument message to the screen or other standard output device. We will talk about functions in more depth, but for now, they can be realized as specialized workers for a particular job (see Figure 1).
 
 <center>
 
