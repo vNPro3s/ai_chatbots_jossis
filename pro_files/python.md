@@ -29,3 +29,7 @@ The Goals:
 
 {: .box-success}
 **You will deepen your understanding of theoretical foundation** &rarr; running and analyzing notebooks with code; you will conduct various experiments and leverage knowledge by empirical approach   
+
+## Python tutorial
+
+1. [Data types, Built-in functions, and Flow Control](./intro.md)
