@@ -6,7 +6,6 @@ subtitle: Python tutorial - part I
 
 # Python programming fundamentals
 
-<div style="text-align:justify">
 
 
 As the old proverb said:
@@ -624,13 +623,8 @@ The while loop condition is always true because the Boolean value True is engage
 
 Principally, every the for loop can be replaced with an appropriate while loop and vice versa.
 
-</div>
 
-</div>
 ----
-<head>
-  <link rel="stylesheet" type="text/css" media="all" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
-</head>
 
 [whileLoop]:https://www.dropbox.com/s/9xidg9ur2quber9/WhileLoop.jpg?raw=1
 [forLoop]:https://www.dropbox.com/s/21or0n0itk5ache/ForLoop.jpg?raw=1
