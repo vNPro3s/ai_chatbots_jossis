@@ -13,20 +13,20 @@ Learning through work is our central policy so we can go directly to some exampl
 
 Write a Python program that asks the user's age, and based on that information, it returns the year of the user's birth. Also, the program provides information on what year the user will have a specified age.
 
-`Solution:` First, open a new project in the PyCharm Edu, and name it `EX_1`. After that, open a new Python file &Rarr; right click on the project folder and choose `New Python File`  &rarr; name it `solutions_1.py` - (Figure 1).
+{: .box-note}
+**Note:** Recall how to create a new Jupyter notebook in Visual Studio Code &rarr; we show that in the morning session.
 
-<center>
+> Jupyter notebooks in Visual Studio are essential due to their resemblance with Google Colab Notebooks.
 
-![newPyFile]
-**Figure 1** Creating new Python file
-
-</center>
+`Solution:` First, open a new Jupiter Notebook in VSC and name it `solution_1_part1.ipynb`. 
 
 Before writing any program, there is an urgency for a logical and conceptual understanding of a problem.
 
 
-```Python
+```python
+
 # solution - 1
+
 from datetime import datetime
 
 
@@ -43,11 +43,11 @@ print(f'You will be {old_in_future} in the {future_year} year!')
 The console output:
 
 ```
-How old are you - please provide input: 	33
-You were born in:  1987
+How old are you - please provide input: 	34
+You were born in:  1990
 You are interested in a year in which you will have some ages - e.g., 93
 Please provide ages of interest: 	121
-You will be 121 in the 2108 year!
+You will be 121 in the 2111 year!
 
 Process finished with exit code 0
 ```
@@ -59,25 +59,24 @@ Process finished with exit code 0
 
 &nbsp;
 
-No one knows everything defined in the Python programming language. For that reason, there exist excellent documentation that needs to be consulted daily (see Figure 2).  
+No one knows everything defined in the Python programming language. For that reason, excellent documentation exists that needs to be consulted daily (see Figure 1).  
 </div>
 
 &nbsp;
 
-<center>
+
 
 ![datetime]
 
 **Figure 2** Datetime module in the Python Standard Library documentation  
 
-</center>
 
 
 ## Example 2
 ---
-Alternate the previous problem to ensure continuous user input that could be repeated until the user decides to exit the program typing breaking sequence 'ex'.
+Alternate the previous problem to ensure continuous user input, which could be repeated until the user decides to exit the program by typing the breaking sequence 'x'.
 
-`Solution:` We need to provide the same program sequence until the escaping sequence is entered. In an advance number of repeats is not known &Rarr; while loop. Create a new Python file, `solutions_2.py`.  
+`Solution:` We must provide the same program sequence until the escaping sequence is entered. In advance, the number of repeats is unknown &Rarr; while loop. Create a new  `solution_1_part1.ipynb`.  
 
 Solution code:
 
