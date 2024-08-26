@@ -24,6 +24,8 @@ The Goals:
 {: .box-success}
 **You are not to become a programmer** &rarr; with only fundamentals, you will be able to understand the concepts and logic behind AI ChatBots
 
+{: .box-success}
 **You do not need to memorize code snippets and understand all details** &rarr; with provided notebooks, you will be able to recognize template building blocks and how to use them in future projects
 
+{: .box-success}
 **You will deepen your understanding of theoretical foundation** &rarr; running and analyzing notebooks with code; you will conduct various experiments and leverage knowledge by empirical approach   
