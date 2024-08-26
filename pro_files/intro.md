@@ -13,7 +13,7 @@ As the old proverb said:
 
 So, there is no better way to start this relatively short introduction to the Python programming language than with examples. Our motivation is straightforward because many of NLP's contemporary methods are supported by Python solutions.
 
-```Python
+```python
 # this is a simple comment in Python
 # comments are not executed
 # usually they clarify code or emphasize something important
