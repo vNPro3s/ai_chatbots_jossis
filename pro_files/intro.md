@@ -305,7 +305,7 @@ else GO
 
 The conclusion is very simple: The program needs to have a mechanism that mimics this real-world logic. Generally, programming mechanisms that define or demand different ways of program execution are program control flow mechanisms.  
 
-###If statements - conditionals
+### If statements - conditionals
 
 The simplest form is `if-then` with the following logic:
 
@@ -314,8 +314,10 @@ The simplest form is `if-then` with the following logic:
 Generic implementation in Python is:
 
 ```python
+
 if <logical expression>:
   commands
+
 ```
 
 This generic form can be presented with the flow diagram in Figure 2:
