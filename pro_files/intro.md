@@ -72,7 +72,7 @@ In functions, parameters can be any regular type. By regular type, we mean gener
 
  Why are basic data types essential? The answer is simple: the computer needs to know how to save a particular type in memory. The type also defines allowed operations or, more straightforwardly, data manipulation.
 
- ### Strings
+ ###Strings
 
  We will introduce the notion of a variable here. The variable is a reference to the memory location for storing data.
 
@@ -158,7 +158,7 @@ First sentence...First sentence...First sentence...
 
 Plus, the operator in strings defines the so-called **concatenation** operation.
 
-### Integer and floating point data type
+###Integer and floating point data type
 
 Integers and floating point data types can be explained in the same section due to their standard features. Let us see one example:
 
@@ -243,9 +243,9 @@ Division remainder ->  1
 
 ```
 
-### Boolean data type
+###Boolean data type
 
-The boolean data type has only two values &rarr; True and False. Mostly, this data type is related to comparison operators `>, <, >=, <=, ==, !=`. Let us imagine that the user has entered two values &Rarr; val1 and val2. We want to test their relationship.
+The boolean data type has only two values &rarr; True and False. This data type is mainly related to comparison operators `>, <, >=, <=, ==, !=`. Let us imagine that the user has entered two values &Rarr; val1 and val2. We want to test their relationship.
 
 ```python
 
@@ -275,26 +275,26 @@ True
 False
 
 ```
-The Boolean data type is, in many cases, connected to the so-called if statements or any conditional statements. The conditional statements are part of program control flow.
+In many cases, the Boolean data type is connected to so-called if statements or any conditional statements. Conditional statements are part of program control flow.
 
-## Program control flow
-Some programmer is working for a company that produces different robots. One robot type needs to have movement ability in the real world - the programmer's team needs to solve the problem of crossing the street in pedestrian crossing spots. Rules for that problem are:
+##Program control flow
+Some programmers are working for a company that produces different robots. One robot type needs to have movement ability in the real world - the programmer's team needs to solve the problem of crossing the street in pedestrian crossing spots. Rules for that problem are:
 
 ```
 If semaphore is in red then STOP
 If semaphore is in green then GO
 ```
 
-It can be assumed that semaphore is fully operational and defined with two states for pedestrians' movement regulation. Now logic is:
+It can be assumed that the semaphore is fully operational and defined with two states for pedestrians' movement regulation. Now, the logic is:
 
 ```
 if a semaphore is in red, then STOP
 else GO
 ```
 
-The conclusion is very simple &rarr; the program needs to have a mechanism that mimics this real world logic. Generally, programming mechanisms which define or demand different ways of program execution is program control flow mechanism.  
+The conclusion is very simple: The program needs to have a mechanism that mimics this real-world logic. Generally, programming mechanisms that define or demand different ways of program execution are program control flow mechanisms.  
 
-### If statements - conditionals
+###If statements - conditionals
 
 The simplest form is `if-then` with the following logic:
 
@@ -307,13 +307,12 @@ if <logical expression>:
   commands
 ```
 
-This generic form can be presented with the flow diagram in figure 2:
+This generic form can be presented with the flow diagram in Figure 2:
 
-<center>
 
 ![if-then]
 **Figure 2** Flow diagram for IF-THEN
-</center>
+
 
 IF-THEN is simple to understand &rarr; branching point consists of the logical condition test, and if that test is true, then a block of commands 2 will be executed. After that, the following commands block 3 is executed. Otherwise, when the test is false only block 3 is executed.  
 
@@ -328,13 +327,13 @@ if(x >= 10):
 print("This will be always executed...")
 ```   
 
-More often, if-else statements are in use. In that mechanism, a block of code after the ELSE part will always be executed, as depicted in figure 3.
+More often, if-else statements are in use. A code block after the ELSE part will always be executed in that mechanism, as depicted in Figure 3.
 
-<center>
+
 
 ![if-else]
 **Figure 3** Flow diagram for IF-ELSE
-</center>
+
 
 ***Example:*** Create a Python program that checks if the user input string starts with a letter `p`. If the condition is a true print message, "Starts with p!", otherwise print "Starts with some other letter different of p!".
 
@@ -350,20 +349,19 @@ else:
   print ("Starts with some other letter!")
 ```
 
-In situations where is a need for more conditions to check if-else if-else statements are useful (see figure 4). As shown in Figure 4, when true is the outcome for any logical condition, the corresponding command block is in charge, and the program jumps to the first block after chained conditions. When all conditions are false, the else block is in action.  
+In situations where there is a need for more conditions to check if-else, if-else statements are useful (see Figure 4). As shown in Figure 4, when true is the outcome for any logical condition, the corresponding command block is in charge, and the program jumps to the first block after chained conditions. When all conditions are false, the else block is in action.  
 
 
-<center>
 
 ![if-elseif]
 **Figure 4** Flow diagram for chained IF-ELSEIF-ELSE
-</center>
+
 
 ***Example:*** For an arbitrary user string check:
 
 1. Equality with the string "This is if-else if-else" &Rarr; output message "Equals!!!" when it is true
-2. When the string is not equal, check if it is starting with low letter &Rarr; output message "Starts with a lower letter!" when it is true
-3. When none of the above conditions are satisfied, print the message "Conditions not satisfied!" and output input string below that message.
+2. When the string is not equal, check if it is starting with a low letter &Rarr; output message "Starts with a lower letter!" when it is true
+3. When none of the above conditions are satisfied, print the message "Conditions not satisfied!" and output the input string below that message.
 
 ```Python
 target = "This is if-else if-else"
@@ -382,15 +380,15 @@ else:
 
 &nbsp;
 
-In the class, we were talking about strings as the array of characters. That means they have length and all letters are indexed starting from index 0 for the first letter.
+In the class, we discussed strings as an array of characters. That means they have length, and all letters are indexed starting from index 0 for the first letter.
 
 </div>
 
-Another set of mechanisms for the program control flow are loops. In the next section, the basics of for loops and while loops are discussed throughout diagrams and simple examples.
+Loops are another set of mechanisms for program control flow. In the next section, the basics of loops and while loops are discussed through diagrams and simple examples.
 
-### Loops in Python
+###Loops in Python
 
-There are plenty occasions when program needs to repeat same steps, and we have loops as tool to achieve that goal. Principally, when the number of repeats are known in advance for loops are main choice.
+There are plenty of occasions when a program needs to repeat the same steps, and loops are a tool to achieve that goal. Principally, `for loops` is the leading choice when the number of repeats is known.
 
 ***Example:*** Write all numbers from 1 to 10. Instead of using print function 10 times, for loop solve the problem more efficiently.
 
@@ -469,13 +467,13 @@ User input this string!
 Input string length is ->  23
 <enter> for exit...
 ```
-For loop can be conceptualized with the flow diagram in figure 6.
+The for loop can be conceptualized with the flow diagram in Figure 6.
 
-<center>
+
 
 ![forLoop]
 **Figure 6** For loop conceptual flow diagram
-</center>
+
 
 ***Example*** Write program that prints only odd numbers from desired range of numbers.
 
@@ -537,15 +535,15 @@ After if condition... printed in every step of the for loop!
 
 ```
 
-The message `After if condition... printed in every step of the for loop!` actually is not printed in every step. The reason is simple - `continue` statement immediately goes to next step in the for loop.
+The message `After if condition... printed in every step of the for loop!` is actually not printed in every step. The reason is simple—the `continue` statement immediately moves to the next step in the for loop.
 
-Another types of loops are also common in Python &rarr; `while loop`. When number of looping steps is not know in advanced while loop is main character. Flow diagram for that loop is shown in figure 7.
+Other types of loop are also common in Python &rarr; the `while loop.` When a number of looping steps is not known in advance while the loop is the main character. The flow diagram for that loop is shown in Figure 7.
 
-<center>
+
 
 ![whileLoop]
 **Figure 7** Flow diagram for while loop
-</center>
+
 
 </div>
 
@@ -554,11 +552,11 @@ Another types of loops are also common in Python &rarr; `while loop`. When numbe
 
 &nbsp;
 
-With the while loop, you can easily end up with an infinite looping. Take precautions in looping conditions so you can be sure it will terminate at some point.
+With the while loop, you can easily end up with an infinite looping. Take precautions in looping conditions to ensure it will terminate at some point.
 
 </div>
 
-***Example*** Using the while loop solve a problem from for loops where user string is printed character by character.  
+***Example*** Using the while loop solves a problem for loops where the user string is printed character by character.  
 
 ```Python
 cnt = 0
