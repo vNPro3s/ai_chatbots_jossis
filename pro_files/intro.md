@@ -397,6 +397,7 @@ else:
 
 ```
 
+
 <div class="alert alert-success" role = "alert">
 <i class="fa fa-university" style="font-size:24px; font-weight:bold"> Recall </i>
 
@@ -405,6 +406,7 @@ else:
 In the class, we discussed strings as an array of characters. That means they have length, and all letters are indexed starting from index 0 for the first letter.
 
 </div>
+
 
 Loops are another set of mechanisms for program control flow. In the next section, the basics of loops and while loops are discussed through diagrams and simple examples.
 
@@ -434,6 +436,7 @@ Num -> 10
 
 ```
 
+
 <div class="alert alert-info" role = "alert">
 <i class="fa fa-bell-o" style="font-size:24px; font-weight:bold"> Remark </i>
 
@@ -442,6 +445,7 @@ Num -> 10
 All Built-in types and functions are well documented in Python Standard Library where even experienced programmers search for information.
 
 </div>
+
 
 
 
