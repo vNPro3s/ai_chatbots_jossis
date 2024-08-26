@@ -33,4 +33,4 @@ The Goals:
 ## Python tutorial
 
 1. [Data types, Built-in functions, and Flow Control](./intro.md)
-2. [Hads-on Part I](./python_hands-pn_1.md)
+2. [Python Hads-on Part I](./python_hands-pn_1.md)
