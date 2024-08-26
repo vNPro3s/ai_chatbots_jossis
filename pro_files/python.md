@@ -14,5 +14,11 @@ Here are some reasons:
   - Various solutions in Python also support leveraging the capabilities of AI ChatBots in the form of RAG systems.
   - Python provides a simple and efficient way of using the most advanced LLMs (e.g., ChatGPT-4o, Claude-3-Sonnet, ...) by employing API connections.
   - Contemporary Python is the leading programming language in DL and ML, and taking hands-on experience with corresponding libraries and frameworks could provide solid ground to understand how AI systems learn from data in the process of training, tuning, or choosing the best possible model in the validation process, and finally evaluating performances in the testing process. All of this is also crucial in building AI ChatBots.
+  - Python supports many efficient data acquisition and preprocessing approaches, providing a prerequisite for creating intelligent systems that learn from data.
+  - With a fundamental knowledge of Python, students of non-technical profiles can develop simple prototypes of ChatBots using tools like RASA, ChatterBot, and Dialogflow or by employing sophisticated platform tools with user-friendly interfaces.
   - Understanding the Python and basic principles of building AI systems makes non-technical staff (e.g., marketing professionals or UX designers) effectively communicate with technical staff in building better ChatBots by adding insights from different perspectives for chatbot functionality enhancements, better user experience and relevance for them, and in general higher usability score.
-  - Last, but not the least important &rarr; programming develops problem-solving skils and logical thinking.  
+  - Last but not least, it is essential that even programming at the fundamental level develops problem-solving skills and logical thinking.  
+
+The Goals:
+
+{}
