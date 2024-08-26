@@ -72,11 +72,11 @@ In functions, parameters can be any regular type. By regular type, we mean gener
 
  Why are basic data types essential? The answer is simple: the computer needs to know how to save a particular type in memory. The type also defines allowed operations or, more straightforwardly, data manipulation.
 
-###Strings
+### Strings
 
  We will introduce the notion of a variable here. The variable is a reference to the memory location for storing data.
 
-```python
+```Python
 
 msg = "This is also a message!"
 print(msg)
@@ -84,11 +84,13 @@ print(msg)
 Output:
 
 This is also a message!
+
 ```
 
 Printing with format method.
 
 ```Python
+
 name = "Sara"
 city = "Zadar"
 
@@ -97,30 +99,36 @@ print("{} lives in {}.".format(name, city))
 Output:
 
 Sara lives in Zadar.
+
 ```
 
 Printing using f-Strings.
 
 ```Python
+
 author = "Roger Penrose"
 title = "The Emperor's New Mind"
 year = 1989
 
 print(f"{author} wrote scientific classic {title} in the {year}.")
+
 ```
 
 This example we can notice that the variable year is not declared within quotes. That implies it is a number, precisely an integer number.
 
 ```Python
+
 print(type(year))
 
 Output:
 <class 'int'>
+
 ```
 
 The `print` function represents it with an equivalent string of adequate digits. Python has a mechanism for similar, visible data transformation.
 
 ```Python
+
 var = input("Please enter some year:\n")
 print(f"User enter type -> {type(var)}.")
 var = int(var) # type casting
@@ -154,11 +162,12 @@ Output:
 First sentence... Second one...
 
 First sentence...First sentence...First sentence...
+
 ```  
 
 Plus, the operator in strings defines the so-called **concatenation** operation.
 
-###Integer and floating point data type
+### Integer and floating point data type
 
 Integers and floating point data types can be explained in the same section due to their standard features. Let us see one example:
 
@@ -194,6 +203,7 @@ Enter another integer:	>? 3
 Some strange things happened here. Can you guess why? The answer is straightforward: input produces string types. So, we need to convert strings into equivalent representatives. That operation has a unique name in programming: typecasting.
 
 ```Python
+
 num_1 = input("Enter one integer:\t")
 num_2 = input("Enter another integer:\t")
 print(num_1 + num_2)
@@ -214,6 +224,7 @@ After typecasting ->  103
 Examples of division, nth power, and multiplication can be illustrated with some examples:
 
 ```Python
+
 n1 = 10
 n2 = 3
 res = n1/n2
@@ -243,11 +254,11 @@ Division remainder ->  1
 
 ```
 
-###Boolean data type
+### Boolean data type
 
 The boolean data type has only two values &rarr; True and False. This data type is mainly related to comparison operators `>, <, >=, <=, ==, !=`. Let us imagine that the user has entered two values &Rarr; val1 and val2. We want to test their relationship.
 
-```python
+```Python
 
 val1 = 1000
 val2 = 45
