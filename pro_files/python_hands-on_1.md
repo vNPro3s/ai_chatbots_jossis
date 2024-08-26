@@ -9,7 +9,6 @@ subtitle: Learning by doing in Python
 Learning through work is our central policy so we can go directly to some examples.
 
 ## Example 1
----
 
 Write a Python program that asks the user's age, and based on that information, it returns the year of the user's birth. Also, the program provides information on what year the user will have a specified age.
 
@@ -73,15 +72,17 @@ No one knows everything defined in the Python programming language. For that rea
 
 
 ## Example 2
----
+
 Alternate the previous problem to ensure continuous user input, which could be repeated until the user decides to exit the program by typing the breaking sequence 'x'.
 
 `Solution:` We must provide the same program sequence until the escaping sequence is entered. In advance, the number of repeats is unknown &Rarr; while loop. Create a new  `solution_1_part1.ipynb`.  
 
 Solution code:
 
-```Python
+```python
+
 # solution - 2
+
 from datetime import datetime
 
 while True:
@@ -94,10 +95,11 @@ while True:
     future_year = born_in + int(old_in_future)
     print(f'You will be {old_in_future} in the {future_year} year!')
     cont = input("To exit type 'ex' - any other key for new calculations!!!\n")
-    if cont.lower() == 'ex':
+    if cont.lower() == 'x':
         break
     else:
         continue
+
 ```
 
 
