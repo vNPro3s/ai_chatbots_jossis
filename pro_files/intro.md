@@ -275,7 +275,7 @@ True
 False
 
 ```
-In many cases, the Boolean data type is connected to so-called if statements or any conditional statements. Conditional statements are part of program control flow.
+The Boolean data type is often connected to so-called if statements or any conditional statements. Conditional statements are part of the program control flow.
 
 ##Program control flow
 Some programmers are working for a company that produces different robots. One robot type needs to have movement ability in the real world - the programmer's team needs to solve the problem of crossing the street in pedestrian crossing spots. Rules for that problem are:
@@ -285,7 +285,7 @@ If semaphore is in red then STOP
 If semaphore is in green then GO
 ```
 
-It can be assumed that the semaphore is fully operational and defined with two states for pedestrians' movement regulation. Now, the logic is:
+It can be assumed that the semaphore is fully operational and defined by two states for pedestrian movement regulation. Now, the logic is:
 
 ```
 if a semaphore is in red, then STOP
