@@ -1,10 +1,11 @@
+---
+layout: page
+title: Python data types, built-in functions, and flow control
+subtitle: Python tutorial - part I
+---
+
 # Python programming fundamentals
----
 
-
-
-
----
 <div style="text-align:justify">
 
 <span style="color:blue;font-family:Consolas; font-size:11pt;">
