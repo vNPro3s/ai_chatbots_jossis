@@ -8,18 +8,21 @@ subtitle: Python tutorial - part I
 
 
 
-As the old proverb said:
+As the old proverb says:
+
 > "Tell me, and I'll forget; show me, and I may remember; involve me, and I'll understand."
 
-So, there is no better way to start this relatively short introduction to the Python programming language than with examples. Our motivation is straightforward because many of NLP's contemporary methods are supported by Python solutions.
+So, there is no better way to start this relatively short introduction to the Python programming language than with examples. Our motivation is straightforward: Many of NLP's contemporary methods are supported by Python solutions.
 
 ```python
+
 # this is a simple comment in Python
 # comments are not executed
 # usually they clarify code or emphasize something important
 # hashtag sign are preceding comment text
 
 print("This is a message from python!")
+
 ```
 
 If we run this in Python, simple output would be produced:
