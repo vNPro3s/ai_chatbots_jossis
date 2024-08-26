@@ -9,8 +9,10 @@ subtitle: Python tutorial - part I
 <div style="text-align:justify">
 
 
+As the old proverb said:
+> "Tell me, and I'll forget; show me, and I may remember; involve me, and I'll understand."
 
-As the old proverb said,  "Tell me, and I'll forget; show me, and I may remember; involve me, and I'll understand." So, there is no better way to start this relatively short introduction to the Python programming language than with examples. Our motivation is straightforward because many of NLP's contemporary methods are supported by Python solutions.
+So, there is no better way to start this relatively short introduction to the Python programming language than with examples. Our motivation is straightforward because many of NLP's contemporary methods are supported by Python solutions.
 
 ```Python
 # this is a simple comment in Python
@@ -21,15 +23,6 @@ As the old proverb said,  "Tell me, and I'll forget; show me, and I may remember
 print("This is a message from python!")
 ```
 
-<div class="alert alert-info" role = "alert">
-<i class="fa fa-bell-o" style="font-size:24px; font-weight:bold"> Remark </i>
-
-&nbsp;
-
-How to install Python on your computer and run it from a command prompt or within IDE Pycharm, you can find in the additional material <b>Python installation and running</b>.
-
-</div>
-
 If we run this in Python, simple output would be produced:
 
 ```
@@ -38,7 +31,7 @@ This is a message from python!
 
 ## Functions
 
-Here, ** print ** can be noticed, which is an embedded Python function. As its name suggests, the print function produces a direct output of the argument message to the screen or other standard output device. We will talk about functions in more depth, but for now, they can be realized as specialized workers for a particular job (see Figure 1).
+Here, **print** can be noticed, which is an embedded Python function. As its name suggests, the print function directly outputs the argument message to the screen or other standard output device. We will discuss functions in more depth, but for now, they can be realized as specialized workers for a particular job (see Figure 1).
 
 <center>
 
@@ -49,7 +42,7 @@ Here, ** print ** can be noticed, which is an embedded Python function. As its n
 </center>
 
 
-Indeed, the desired output is an ideal scenario, and many details need to be satisfied to get that outcome. In this particular case **function name** is `print`, and the argument is the message `"This is a message from python!"`.  Therefore, every function has specific signature:
+Indeed, the desired output is an ideal scenario, and many details need to be satisfied to get that outcome. In this particular case **function name** is `print`, and the argument is the message `"This is a message from python!"`.  Therefore, every function has a specific signature:
 
 ```
 function_name(par_1, par_2, par_3)
