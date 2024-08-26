@@ -76,7 +76,7 @@ In functions, parameters can be any regular type. By regular type, we mean gener
 
  We will introduce the notion of a variable here. The variable is a reference to the memory location for storing data.
 
-```Python
+```python
 
 msg = "This is also a message!"
 print(msg)
@@ -89,7 +89,7 @@ This is also a message!
 
 Printing with format method.
 
-```Python
+```python
 
 name = "Sara"
 city = "Zadar"
@@ -104,7 +104,7 @@ Sara lives in Zadar.
 
 Printing using f-Strings.
 
-```Python
+```python
 
 author = "Roger Penrose"
 title = "The Emperor's New Mind"
@@ -116,7 +116,7 @@ print(f"{author} wrote scientific classic {title} in the {year}.")
 
 This example we can notice that the variable year is not declared within quotes. That implies it is a number, precisely an integer number.
 
-```Python
+```python
 
 print(type(year))
 
@@ -127,7 +127,7 @@ Output:
 
 The `print` function represents it with an equivalent string of adequate digits. Python has a mechanism for similar, visible data transformation.
 
-```Python
+```python
 
 var = input("Please enter some year:\n")
 print(f"User enter type -> {type(var)}.")
@@ -149,7 +149,7 @@ The first line introduces Python's built-in function `input`. It asks the user f
 
 As mentioned, data types define allowed operations on them. The following example presents that for the string type.
 
-```Python
+```python
 
 snt_1 = "First sentence..."
 snt_2 = "Second one..."
@@ -171,7 +171,7 @@ Plus, the operator in strings defines the so-called **concatenation** operation.
 
 Integers and floating point data types can be explained in the same section due to their standard features. Let us see one example:
 
-```Python
+```python
 
 num_1 = 100
 num_2 = 3
@@ -186,7 +186,7 @@ Output:
 
 Some slightly modified cases:
 
-```Python
+```python
 
 num_1 = input("Enter one integer:\t")
 num_2 = input("Enter another integer:\t")
@@ -202,7 +202,7 @@ Enter another integer:	>? 3
 
 Some strange things happened here. Can you guess why? The answer is straightforward: input produces string types. So, we need to convert strings into equivalent representatives. That operation has a unique name in programming: typecasting.
 
-```Python
+```python
 
 num_1 = input("Enter one integer:\t")
 num_2 = input("Enter another integer:\t")
@@ -223,7 +223,7 @@ After typecasting ->  103
 
 Examples of division, nth power, and multiplication can be illustrated with some examples:
 
-```Python
+```python
 
 n1 = 10
 n2 = 3
@@ -258,7 +258,7 @@ Division remainder ->  1
 
 The boolean data type has only two values &rarr; True and False. This data type is mainly related to comparison operators `>, <, >=, <=, ==, !=`. Let us imagine that the user has entered two values &Rarr; val1 and val2. We want to test their relationship.
 
-```Python
+```python
 
 val1 = 1000
 val2 = 45
@@ -288,7 +288,7 @@ False
 ```
 The Boolean data type is often connected to so-called if statements or any conditional statements. Conditional statements are part of the program control flow.
 
-##Program control flow
+## Program control flow
 Some programmers are working for a company that produces different robots. One robot type needs to have movement ability in the real world - the programmer's team needs to solve the problem of crossing the street in pedestrian crossing spots. Rules for that problem are:
 
 ```
@@ -313,7 +313,7 @@ The simplest form is `if-then` with the following logic:
 
 Generic implementation in Python is:
 
-```Python
+```python
 if <logical expression>:
   commands
 ```
@@ -331,12 +331,14 @@ IF-THEN is simple to understand &rarr; branching point consists of the logical c
 ***Example:*** What will be output for inputs x = 1, 14, 10 in the following code:
 
 
-```Python
+```python
+
 x = int(input("Enter positive integer:\t"))
 if(x >= 10):
   print("Number -> ", x, " is greater or equal to 10!")
   print("This part will be printed only when logical if condition is satisfied!")
 print("This will be always executed...")
+
 ```   
 
 More often, if-else statements are in use. A code block after the ELSE part will always be executed in that mechanism, as depicted in Figure 3.
@@ -350,7 +352,8 @@ More often, if-else statements are in use. A code block after the ELSE part will
 
 ***Example:*** Create a Python program that checks if the user input string starts with a letter `p`. If the condition is a true print message, "Starts with p!", otherwise print "Starts with some other letter different of p!".
 
-```Python
+```python
+
 letter = "p"
 strin = input("Enter some arbitrary string:\t")
 # strip whitespaces and transform it into the lower case
@@ -360,6 +363,7 @@ if strin.startswith(letter):
   print("Input string starts with -> ", letter, "!")
 else:
   print ("Starts with some other letter!")
+
 ```
 
 In situations where there is a need for more conditions to check if-else, if-else statements are useful (see Figure 4). As shown in Figure 4, when true is the outcome for any logical condition, the corresponding command block is in charge, and the program jumps to the first block after chained conditions. When all conditions are false, the else block is in action.  
@@ -377,7 +381,8 @@ In situations where there is a need for more conditions to check if-else, if-els
 2. When the string is not equal, check if it is starting with a low letter &Rarr; output message "Starts with a lower letter!" when it is true
 3. When none of the above conditions are satisfied, print the message "Conditions not satisfied!" and output the input string below that message.
 
-```Python
+```python
+
 target = "This is if-else if-else"
 strin = input("Define one string\n")
 if strin == target:
@@ -386,7 +391,8 @@ elif strin[0].islower():
   print("Starts with a lower letter!")
 else:
   print("Conditions are not satisfied!")
-  print("Input -> ", strin)
+  print("Input -> ", string)
+
 ```
 
 <div class="alert alert-success" role = "alert">
@@ -400,13 +406,14 @@ In the class, we discussed strings as an array of characters. That means they ha
 
 Loops are another set of mechanisms for program control flow. In the next section, the basics of loops and while loops are discussed through diagrams and simple examples.
 
-###Loops in Python
+### Loops in Python
 
 There are plenty of occasions when a program needs to repeat the same steps, and loops are a tool to achieve that goal. Principally, `for loops` is the leading choice when the number of repeats is known.
 
 ***Example:*** Write all numbers from 1 to 10. Instead of using print function 10 times, for loop solve the problem more efficiently.
 
-```Python
+```python
+
 for num in range(1, 11):
     print("Num -> ", num)
 
@@ -422,6 +429,7 @@ Num ->  7
 Num ->  8
 Num ->  9
 Num -> 10
+
 ```
 
 <div class="alert alert-info" role = "alert">
@@ -442,7 +450,7 @@ All Built-in types and functions are well documented in Python Standard Library 
 
 ***Example*** Print one by one character in arbitrary string entered by user.
 
-```Python
+```python
 
 inpt = input("Enter a string:\n")
 k = 1
@@ -481,6 +489,7 @@ User input this string!
 23 : character ->  !
 Input string length is ->  23
 <enter> for exit...
+
 ```
 The for loop can be conceptualized with the flow diagram in Figure 6.
 
@@ -493,7 +502,7 @@ The for loop can be conceptualized with the flow diagram in Figure 6.
 
 ***Example*** Write program that prints only odd numbers from desired range of numbers.
 
-```Python
+```python
 
 endRange = 11
 
@@ -537,7 +546,7 @@ After if condition... printed in every step of the for loop!
 
 Here we have `pass` statement as null operation placeholder. This statement can be used when no code needs to be executed. If `pass` is replaced with another statement `continue`, totally different outcome is produced.
 
-```Python
+```python
 
 Output:
 
@@ -575,7 +584,8 @@ With the while loop, you can easily end up with an infinite looping. Take precau
 
 ***Example*** Using the while loop solves a problem for loops where the user string is printed character by character.  
 
-```Python
+```python
+
 cnt = 0
 inpt = input("Enter a string:\n")
 while cnt < len(inpt):
@@ -608,11 +618,12 @@ User enter a string!
 18 : g
 19 : !
 <<<<<<<<<<<<<<<< finished >>>>>>>>>>>>>>>>>>
+
 ```
 
 ***Example*** Write the Python program that asks the user to supply strings until a choice for exit is not entered. The programmer decided to define exit code with a "q" letter.
 
-```Python
+```python
 
 exitCode = "q"
 
