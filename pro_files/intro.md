@@ -35,13 +35,12 @@ This is a message from python!
 
 Here, **print** can be noticed, which is an embedded Python function. As its name suggests, the print function directly outputs the argument message to the screen or other standard output device. We will discuss functions in more depth, but for now, they can be realized as specialized workers for a particular job (see Figure 1).
 
-<center>
 
 ![function_1]
 
 **Figure 1** Function transforms inputs into the desired output    
 
-</center>
+
 
 
 Indeed, the desired output is an ideal scenario, and many details need to be satisfied to get that outcome. In this particular case **function name** is `print`, and the argument is the message `"This is a message from python!"`.  Therefore, every function has a specific signature:
@@ -50,7 +49,7 @@ Indeed, the desired output is an ideal scenario, and many details need to be sat
 function_name(par_1, par_2, par_3)
 ```
 
-The **function name** points toward the appropriate action produced by it, followed by brackets containing zero or more **parameters**. Concrete values of parameters passed to the function some authors call **arguments**. So, for the print function in this example parameter is a string, and an argument is a concrete message `"This is a message from python!"`
+The **function name** points toward the appropriate action produced by it, followed by brackets containing zero or more **parameters**. Concrete values of parameters passed to the function some authors call **arguments**. So, for the print function in this example, parameter is a string, and an argument is a concrete message `"This is a message from python!"`
 
 <div class="alert alert-warning" role = "alert">
 <i class="fa fa-cogs" style="font-size:24px; font-weight:bold"> Highlights </i>
@@ -61,7 +60,7 @@ Built-in functions are documented in <a href="https://docs.python.org/3/library/
 </div>
 
 
-In functions, parameters can be any regular type. By regular type, we mean generic types, data structures, and adequately user-defined types. Let us see basic data types, while others will be explained throughout the semester.
+In functions, parameters can be any regular type. By regular type, we mean generic types, data structures, and adequately user-defined types. Let's look at basic data types; others will be explained throughout the semester.
 
 ## Basic data types in Python
 
@@ -71,11 +70,11 @@ In functions, parameters can be any regular type. By regular type, we mean gener
  - Strings
  - Boolean  
 
- Why are basic data types essential? The answer is simple - the computer needs to know how to save a particular type in memory, and type also defines allowed operations or, more straightforward, data manipulation.
+ Why are basic data types essential? The answer is simple: the computer needs to know how to save a particular type in memory. The type also defines allowed operations or, more straightforwardly, data manipulation.
 
  ### Strings
 
- In this place, we will introduce the notion of a variable. The variable is a reference to the memory location for storing data.
+ We will introduce the notion of a variable here. The variable is a reference to the memory location for storing data.
 
 ```python
 
@@ -110,7 +109,7 @@ year = 1989
 print(f"{author} wrote scientific classic {title} in the {year}.")
 ```
 
-In this example, we can notice that the variable year is not declared within quotes. That implies it is a number, precisely an integer number.
+This example we can notice that the variable year is not declared within quotes. That implies it is a number, precisely an integer number.
 
 ```Python
 print(type(year))
@@ -119,7 +118,7 @@ Output:
 <class 'int'>
 ```
 
-The `print` function represents it with an equivalent string consisting of the adequate digits. Python has a mechanism for similar, visible data transformation.
+The `print` function represents it with an equivalent string of adequate digits. Python has a mechanism for similar, visible data transformation.
 
 ```Python
 var = input("Please enter some year:\n")
@@ -138,9 +137,9 @@ You have entered 1987
 
 ```
 
-First line introduces Python's built-in function `input`. It asks the user for standard input (from the keyboard) and interprets it as a string. At the end of the input message, the special character `\n` can be noticed. Special characters tell the interpreter what to do but do not produce any visible character or sequence on standard output. Special characters have special [meaning](https://www.w3schools.com/python/gloss_python_escape_characters.asp), and on many occasions, they are known under the name `escape characters`.
+The first line introduces Python's built-in function `input`. It asks the user for standard input (from the keyboard) and interprets it as a string. The special character `\n` can be noticed at the end of the input message. Special characters tell the interpreter what to do but do not produce any visible character or sequence on standard output. Special characters have special [meaning](https://www.w3schools.com/python/gloss_python_escape_characters.asp), and on many occasions, they are known under the name `escape characters`.
 
-As already was mentioned, data types defines allowed operations on them. Following example, present that for string type.
+As mentioned, data types define allowed operations on them. The following example presents that for the string type.
 
 ```Python
 
@@ -157,11 +156,11 @@ First sentence... Second one...
 First sentence...First sentence...First sentence...
 ```  
 
-Plus operator in strings defines so-called **concatenation** operation.
+Plus, the operator in strings defines the so-called **concatenation** operation.
 
 ### Integer and floating point data type
 
-Integers and floating point data type can be explained in same section due to their common features. Let us see one example:
+Integers and floating point data types can be explained in the same section due to their standard features. Let us see one example:
 
 ```Python
 
@@ -176,7 +175,7 @@ Output:
 
 ```
 
-Some, slightly modified case:
+Some slightly modified cases:
 
 ```Python
 
@@ -192,7 +191,7 @@ Enter another integer:	>? 3
 
 ```
 
-Here, some strange things happened - can guess why? The answer is straightforward - input produces string types. So, we need to convert strings into equivalent representatives. That operation has a unique name in programming - typecasting.
+Some strange things happened here. Can you guess why? The answer is straightforward: input produces string types. So, we need to convert strings into equivalent representatives. That operation has a unique name in programming: typecasting.
 
 ```Python
 num_1 = input("Enter one integer:\t")
@@ -246,7 +245,7 @@ Division remainder ->  1
 
 ### Boolean data type
 
-The boolean data type has only two values &rarr; True and False. Mostly, this data type is related with comparison operators `>, <, >=, <=, ==, !=`. Let us imagine that the user has entered two values &Rarr; val1 and val2. We want to test their relationship.
+The boolean data type has only two values &rarr; True and False. Mostly, this data type is related to comparison operators `>, <, >=, <=, ==, !=`. Let us imagine that the user has entered two values &Rarr; val1 and val2. We want to test their relationship.
 
 ```python
 
@@ -625,6 +624,8 @@ The while loop condition is always true because the Boolean value True is engage
 &nbsp;
 
 Principally, every the for loop can be replaced with an appropriate while loop and vice versa.
+
+</div>
 
 
 ----
