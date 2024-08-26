@@ -1,6 +1,12 @@
-# Python  programming fundamentals - EX 1
+---
+layout: page
+title: Hands-on Python part I
+subtitle: Learning by doing in Python
+---
 
-In the lecture on N-grams and Language models and the lecture titled Feature extractions, we gave a few examples with Python. Moreover, we emphasized that our primary tool in this course will be the Python programming language and additional libraries. Thus, the second week's lecture and related material present some fundamentals in the Python programming language. We do not want to make this course the course on Python programming, but there are a few dots needed for the final goal of performing and illustrating basics tasks in NLP. Learning through work is our main policy, so that means we can go directly to some examples.
+# Hands-on Python - part I
+
+Learning through work is our central policy so we can go directly to some examples.
 
 ## Example 1
 ---
