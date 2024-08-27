@@ -17,7 +17,7 @@ Write a Python program that asks the user's age, and based on that information, 
 
 > Jupyter notebooks in Visual Studio are essential due to their resemblance with Google Colab Notebooks.
 
-`Solution:` First, open a new Jupiter Notebook in VSC and name it `solution_1_part1.ipynb`. 
+`Solution:` First, open a new Jupiter Notebook in VSC and name it `solution_1.ipynb`. 
 
 Before writing any program, there is an urgency for a logical and conceptual understanding of a problem.
 
@@ -75,7 +75,7 @@ No one knows everything defined in the Python programming language. For that rea
 
 Alternate the previous problem to ensure continuous user input, which could be repeated until the user decides to exit the program by typing the breaking sequence 'x'.
 
-`Solution:` We must provide the same program sequence until the escaping sequence is entered. In advance, the number of repeats is unknown &Rarr; while loop. Create a new  `solution_1_part1.ipynb`.  
+`Solution:` We must provide the same program sequence until the escaping sequence is entered. In advance, the number of repeats is unknown &Rarr; while loop. Create a new  `solution_2.ipynb`.  
 
 Solution code:
 
@@ -94,7 +94,7 @@ while True:
     old_in_future = input("Please provide ages of interest: \t")
     future_year = born_in + int(old_in_future)
     print(f'You will be {old_in_future} in the {future_year} year!')
-    cont = input("To exit type 'ex' - any other key for new calculations!!!\n")
+    cont = input("To exit type 'x' - any other key for new calculations!!!\n")
     if cont.lower() == 'x':
         break
     else:
@@ -108,19 +108,19 @@ Console output:
 
 ```
 How old are you - please provide input: 	29
-You were born in:  1991
+You were born in:  1995
 You are interested in a year in which you will have some ages - e.g., 93
 Please provide ages of interest: 	78
-You will be 78 in the 2069 year!
-To exit type 'ex' - any other key for new calculations!!!
+You will be 78 in the 2073 year!
+To exit type 'x' - any other key for new calculations!!!
 g
-How old are you - please provide input: 	42
-You were born in:  1978
+How old are you - please provide input: 	40
+You were born in:  1984
 You are interested in a year in which you will have some ages - e.g., 93
-Please provide ages of interest: 	89
-You will be 89 in the 2067 year!
-To exit type 'ex' - any other key for new calculations!!!
-Ex
+Please provide ages of interest: 	101
+You will be 89 in the 2085 year!
+To exit type 'x' - any other key for new calculations!!!
+x
 
 Process finished with exit code 0
 
@@ -130,7 +130,7 @@ Process finished with exit code 0
 ---
 Write a Python function that receives two arguments. If only one of them is a string, perform string concatenation, and in a case where both are numbers, perform all four basic arithmetic operations. In all cases, the corresponding output needs to be produced.
 
-`Solution: ` Create a new Python file with the name `solutions_3.py`. Here we have a relatively new moment in the form of the Python function. Python function can be represented as a black box with some inputs and outputs. In many situations, someone else has written a function, while others use it where there is a need for it. Logic of solution can be in the following form:
+`Solution: ` Create a new Python file named `solutions_3.ipynb`. Here, we have a relatively new moment in the form of the Python function. Python function can be represented as a black box with some inputs and outputs. In many situations, someone else has written a function, while others use it where it is needed. The logic of solution can be in the following form:
 
 ```
 
@@ -166,8 +166,7 @@ def conc_or_arithmetic(a, b):
     print("<<<<<<<<<<<<<<<<< Finished function call >>>>>>>>>>>>>>>>>>>>>\n")
 
 
-
-if __name__ == '__main__':
+# --------------------------------------------------------------------------------------
     # function calls
     conc_or_arithmetic("tamo", 8)
     conc_or_arithmetic(3, 4)
@@ -207,7 +206,7 @@ Process finished with exit code 0
 
 ```
 
-In programming languages that support function usage, that concept implies a structured part of programming code that is specialized in some task that depends on defined mechanisms of executions in wanted parts or under some circumstances or by the particular event's appearance. Functions bring some advantages in programming languages:
+In programming languages that support function usage, that concept implies a structured part of programming code that is specialized in some task that depends on defined mechanisms of executions in wanted parts, under some circumstances, or by the particular event's appearance. Functions bring some advantages in programming languages:
 
 1. Minimizes errors due to code repetition
 2. Maximizes code readability
@@ -220,7 +219,7 @@ In programming languages that support function usage, that concept implies a str
 
 &nbsp;
 
-In Python, function definitions starts with keyword <b>def</b> followed by function name.  Function names tend to be related to the function task (specialization). Do not use the Croatian diacritics, and for the compound names, use underscores. Every function can have zero or more parameters.   
+In Python, function definitions start with the keyword <b>def</b> followed by the function name.  Function names tend to be related to the function task (specialization). Do not use the Croatian diacritics; for the compound names, use underscores. Every function can have zero or more parameters.   
 </div>
 
 From our example can be inferred that the following steps are crucial for functions usage:
@@ -234,7 +233,7 @@ Sometimes, instead of the `function call`, other terms are known as synonyms &ra
 ## Example 4
 ---
 
-Write a Python function that receives some string and returns query term if it is found in input string and number of its' occurrences. Simplify problem so the query can be only one word.
+Write a Python function that receives a string and returns the query term if it is found in the input string and the number of its occurrences. Simplify the problem so the query can be only one word.
 
 `Solution:` Create a new Python file with the name `solutions_4.py`. Consider some problem that mimics given requirements.
 
@@ -292,8 +291,10 @@ Process finished with exit code 0
 
 &nbsp;
 
-Now we have enough knowledge to consider so-called Regular expressions, which have an essential role in NLP. That will be the topic of our next Exercise.   
+Now, you have enough knowledge to understand the concepts in lectures and notebooks related to NLP.
 </div>
+
+
 
 
 
