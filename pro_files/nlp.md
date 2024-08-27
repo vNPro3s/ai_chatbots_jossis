@@ -19,5 +19,8 @@ have tools for chatbots to interpret, analyze, and generate human language, allo
 2. Information extraction:
 
 `The first lecture meeting for NLP will be on Monday, 9th of October, in P39, from 09.30 AM to 11.00 AM.`
+
+&nbsp;
+
 ![img_calendar_entry](../assets/img/calendar_entry.jpg)
 
