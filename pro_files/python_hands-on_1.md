@@ -10,6 +10,9 @@ Learning through work is our central policy so we can go directly to some exampl
 
 ## Example 1
 
+{: .box-note}
+**Note:** For naming conventions in PYthon, please see [PEP 8 - Style Guide for Python Code](https://peps.python.org/pep-0008/) 
+
 Write a Python program that asks the user's age, and based on that information, it returns the year of the user's birth. Also, the program provides information on what year the user will have a specified age.
 
 {: .box-note}
@@ -294,6 +297,10 @@ Process finished with exit code 0
 Now, you have enough knowledge to understand the concepts in lectures and notebooks related to NLP.
 </div>
 
+
+{: .box-warning}
+**Important:** One important concept for understanding AI Chatbots developed in Python is the concept of Objects in Python. 
+In future sessions, we will provide a short explanation and some examples related to NLP and AI ChatBots. 
 
 
 
