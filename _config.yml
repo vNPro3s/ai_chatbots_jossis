@@ -21,7 +21,7 @@ author: Ante Panjkota
 
 navbar-links:
   Lecture materials: "./pro_files/lecture_materials"
-  Notebooks: "./notebooks/colab_noebooks"
+  Notebooks: "./notebooks/colab_notebooks"
   Resources:
     - LangChain: "https://www.langchain.com/"
     - Ollama: "https://ollama.com/"
