@@ -21,6 +21,5 @@ subtitle:
 13. [app_06](./app_06.py)
 14. [app_07](./app_07.py)
 15. [app_08](./app_08.py)
-16. [app_09](./app_09.py)
 18. [app_10](./app_10.py)
 19. [aux_module](./aux_module.py)
