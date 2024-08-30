@@ -12,7 +12,7 @@ subtitle:
 4. [Sentiment analysis](./Sentiment_analysis.ipynb) &Rarr; [Movie-Reviews](./data/Movie-Reviews.txt)
 5. [model_prompt](./model_prompt_parser.ipynb)
 6. [parsing output](./parsing_output.ipynb)
-7. [prompting_langchain](./prompting_using_langchain)
+7. [prompting_langchain](./prompting_using_langchain.ipynb)
 8. [app_01](./app_01.py)
 9. [app_02](./app_02.py)
 10. [app_03](./app_03.py)
