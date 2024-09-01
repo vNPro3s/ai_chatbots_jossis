@@ -14,3 +14,7 @@ subtitle: Materials for AI ChatBots Course
 
 2. [NLP short intro](./nlp.md)
    - Why is it important to know the fundamentals of NLP for the AI ChatBots course?
+
+3. [AI ChatBots and LLM](./aichatbots_llm.md)
+4. [Prompt design](./prompt_design.md)
+5. [Designin AI ChatBots](./aichatbots_design.md)
