@@ -15,5 +15,19 @@ When designing a good prompt, have in mind the following:
 
 
 {: .box-success}
-To avoid undesired results, ensure that model guessing is kept to a minimum.
-# 
+**Hint** To avoid undesired results, please ensure that model guessing is minimal.
+
+Many companies behind LLMs developed `Prompt Design Cookbooks` or recipes for writing good prompts. We will present some strategies from those cookbooks.
+
+# Strategies for designing prompts
+
+As in any context, the strategy here refers to high-level planning and decision-making to achieve specific results. It provides a broad, overarching framework without diving into the finer details. In contrast, tactics are specific, concrete actions aligned with the strategy, detailing the steps needed to implement the strategic plan effectively.
+
+There are many proposed strategies for designing good prompts, and here, we will focus only on some well-known ones.
+
+## I. Write clear and specific instructions 
+
+Be clear about the task and provide important details or context.
+
+
+
