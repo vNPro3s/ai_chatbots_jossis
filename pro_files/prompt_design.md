@@ -284,7 +284,7 @@ Many tasks can be resolved with efficient, prompt design. Here are just a few:
  - Expanding the response
  - Extend conversation (ChatBots)
 
-A helpful resource that we already used in the hands-on part related to building simple chatbots with LangChain is the [LangSmith Hub](https://smith.langchain.com/hub). It contains many examples of good prompts that can be used freely or modified. It is also an excellent place to obtain experience when developing prompts, and there is a platform for prompt testing.  
+A helpful resource we already used in the hands-on part related to building simple chatbots with LangChain is the [LangSmith Hub](https://smith.langchain.com/hub). It contains many good prompts that can be used freely or modified. It is also an excellent place to obtain experience when developing prompts, and there is a platform for prompt testing.  
 
 ![LangSmith_Hub](../assets/img/langsmith_hub.jpg)
 
