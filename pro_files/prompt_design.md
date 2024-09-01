@@ -61,9 +61,31 @@ listening sessions. Highly recommend these headphones for anyone in need of top-
 prompt = f""" Analyze the review  in the angle bracket so it \
 can be classified as positive, negative, or neutral reviews.
 
-<review>
+<{review}>
 """
 ```
 
+## Tactic III. Specify the length of the response
 
+Define the desired length of the produced output from LLMs. Consider the defined length in terms of how many words, sentences, paragraphs, list length, etc., are at the most approximate value to be satisfied. 
+
+```
+USER
+Summarize the text delimited by triple quotes in about 50 words.
+
+"""insert text here"""
+```
+```
+USER
+Summarize the text delimited by triple quotes in 2 paragraphs.
+
+"""insert text here"""
+```
+```
+USER
+Summarize the text delimited by triple quotes in 3 bullet points.
+
+"""insert text here"""
+
+```
 
