@@ -13,5 +13,7 @@ When designing a good prompt, have in mind the following:
  - the vagueness of natural language can produce misunderstanding
  - knowledge base of some topics shares the same or similar terminology
 
+
+{: .box-success}
 To avoid undesired results, ensure that model guessing is kept to a minimum.
 # 
