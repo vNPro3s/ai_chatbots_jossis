@@ -7,6 +7,11 @@ There are some recipes for efficient, prompt design. Contemporary LLMs are train
 > It is better to pose a good question than give an excellent answer to a wrong one.
 (Anonymous)
 
+When designing a good prompt, have in mind the following:
 
+ - at this stage, the reasoning of LLMs is different than the reasoning of humans (what is evident for humans is not for LLMs)
+ - the vagueness of natural language can produce misunderstanding
+ - knowledge base of some topics shares the same or similar terminology
 
+To avoid undesired results, ensure that model guessing is kept to a minimum.
 # 
