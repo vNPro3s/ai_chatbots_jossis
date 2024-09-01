@@ -91,6 +91,27 @@ Summarize the text delimited by triple quotes in 3 bullet points.
 
 ## Tactic IV. Ask for the structured output
 
-Sometimes it is helpful to ask the model to produce output in the desired format &rarr; `JSON`, `HTML`, `list`, or some other appropriate format. 
+Sometimes it is helpful to ask the model to produce output in the desired format &rarr; `JSON`, `HTML`, `list`, or some other appropriate format. In previous examples of user reviews, we my be interested in obtaining structured output with pair key-values (JSON file).
 
+```
 
+review = """
+I recently purchased the X500 Wireless Headphones from SoundTech Innovations, \
+and I am thoroughly impressed. The sound quality is exceptional, and the battery \
+life exceeds my expectations. The comfortable fit makes them perfect for long \
+listening sessions. Highly recommend these headphones for anyone in need of top-notch audio performance.
+"""
+```
+
+```
+prompt = f""" Analyze the review  in the angle bracket and provide output in the form \
+of JSON file (key: values) with the following keys and values definitions:
+
+product: name of the product (if not known, write unknown)
+brand: name of the brand (if not known, write unknown)
+review: review summaries (if the review is longer than 300 words, otherwise original review)
+opinion: positive, negative or neutral (if not possible to detect, write unable to detect)
+
+<{review}>
+"""
+```
