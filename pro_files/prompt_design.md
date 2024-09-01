@@ -155,9 +155,107 @@ then simply write \"No steps provided.\"
 
 ## Tactic V. Provide examples
 
+When we design a prompt without giving examples to the model, we are using **zero-shot** prompting. Zero-shot prompting is plain instructions on what the model needs to do using only previous knowledge. It has been used for simple, well-defined tasks that are generally known. 
+
+Typical example
+
+```
+Customer review --> find the sentiment of the review.
+ 
+```
+
+Without providing examples of positive, negative, or neutral sentiments, the model will give an output correctly.
+
+We are designing so-called **few-shot** prompts by providing the model with a few examples (usually 1 to 5) of performing a task. In some way, we can consider the few-hot prompting as additional training for the model. The examples help the model understand the format and type of desired output.
+
+In few-shot prompting examples, enables:
+
+ - model to generalized based on the provided input-output relations &rarr; supervised learning
+ - some tutorial on how to perform tasks and what the expected format for output
+ - model to cope with the more complex tasks
+
+```
+SYSTEM
+Answer in a consistent style.
+USER
+Teach me about patience.
+ASSISTANT
+The river that carves the deepest valley flows from a modest spring; the grandest symphony originates from a single note; the most intricate tapestry begins with a solitary thread.
+USER
+Teach me about the ocean.
+```
+
+# Strategy II. Give the model time to "think"
+
+The main goal is to structure a prompt in a way that pushes the model to think about a task like humans, considering more aspects of the problem at hand before providing a final answer. 
+
+## Tactic I. Specify the steps required for task completion.
+
+```
+input text in English language
+
+SYSTEM -> perform the following actions:
+
+1. Summarize the input text in one sentence
+2. Translate the summary in German
+3. List each name in German summary
+4. Output the JSON object with keys: german_summary, names
+
+Separate your answers with line breaks.
+```
+## Tactic II. Specify the output format
+
+That is the only formalization of the previous tactic. 
+
+```
+Your task is to perform the following actions: 
+1 - Summarize the following text delimited by 
+  <> with 1 sentence.
+2 - Translate the summary into French.
+3 - List each name in the French summary.
+4 - Output a json object that contains the 
+  following keys: french_summary, num_names.
+
+Use the following format:
+Text: <text to summarize>
+Summary: <summary>
+Translation: <summary translation>
+Names: <list of names in summary>
+Output JSON: <json with summary and num_names>
+```
+
+## Tactic III. Instruct the model to work out its solution before rushing to a conclusion
+
+Sometimes, we get better results when explicitly instructing the model to reason from first principles before concluding. Suppose, for example, we want a model to evaluate a student’s solution to a math problem. The most obvious way to approach this is to ask the model if the student's solution is correct.
+
+```
+SYSTEM
+Determine if the student's solution is correct or not.
+```
+```
+USER
+Problem Statement: I'm building a solar power installation and I need help working out the financials.
+- Land costs $100 / square foot
+- I can buy solar panels for $250 / square foot
+- I negotiated a contract for maintenance that will cost me a flat $100k per year, and an additional $10 / square foot
+What is the total cost for the first year of operations as a function of the number of square feet.
+
+Student's Solution: Let x be the size of the installation in square feet.
+1. Land cost: 100x
+2. Solar panel cost: 250x
+3. Maintenance cost: 100,000 + 100x
+Total cost: 100x + 250x + 100,000 + 100x = 450x + 100,000
+```
+```
+ASSISTANT
+The student's solution is correct.
+```
+
+# Iterative prompt development
+
+Even when you know the strategies and corresponding tactics in prompt development, the first solution is frequently unsatisfying. So, the logical path is toward iterative prompt development. 
 
 
 
-# Strategy II. Give model time to "think"
 
 
