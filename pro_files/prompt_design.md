@@ -25,7 +25,7 @@ As in any context, the strategy here refers to high-level planning and decision-
 
 There are many proposed strategies for designing good prompts, and here, we will focus only on some well-known ones.
 
-## I. Write clear and specific instructions 
+## Tactic I. Write clear and specific instructions 
 
 You must be clear about the task and provide essential details or context.
 
@@ -37,6 +37,33 @@ You must be clear about the task and provide essential details or context.
 Let us try this. Open a notebook [prompt_design_1.iynb](../notebooks/propt_design_1.ipynb), and download `helper functions` in [aux_functions.py](../notebooks/helper_funk/aux_functions.py). Put it under the same folder in the helper_funk/info.txtVSC project folder. 
 
 
+## Tactic II. Use the delimiters 
+
+Use the delimiters to indicate distinct parts of the input. Standard delimiters used in the prompt design:
+
+ - triple quotes """
+ - triple backticks ```
+ - triple dashes ---
+ - angle bracket < >
+ - XML tags
+
+```
+
+review = """
+I recently purchased the X500 Wireless Headphones from SoundTech Innovations, \
+and I am thoroughly impressed. The sound quality is exceptional, and the battery \
+life exceeds my expectations. The comfortable fit makes them perfect for long \
+listening sessions. Highly recommend these headphones for anyone in need of top-notch audio performance.
+"""
+```
+
+```
+prompt = f""" Analyze the review  in the angle bracket so it \
+can be classified as positive, negative, or neutral reviews.
+
+<review>
+"""
+```
 
 
 
