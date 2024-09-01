@@ -256,9 +256,21 @@ The student's solution is correct.
 Even when you know the strategies and corresponding tactics in prompt development, the first solution is frequently unsatisfying. So, the logical path is toward iterative prompt development. 
 
 [img_iterative](../assets/img/iterative.jpg)
+
 **Figure 1** Iterative prompt development (Sorce: DeepLeaarning.AI)
 
+Guidelines for iterative prompt development are straightforward.
 
+```
+Repeat until obtaining the desired output for the input prompt:
+ - formulate the idea of the solution in conceptual form
+ - be clear and specific in creating prompt
+ - use known tactics for better prompt design
+ - test the solution and analyze the result
+ - find the answer to the reason for undesired output
+ - refine the idea if needed and prompt
+```
 
+Open the notebook [iterative_propt_design](../notebooks/iterative_prompt_design.ipynb) and run all cells carefully, analyzing each step of the prompt improvement. 
 
 
