@@ -27,7 +27,16 @@ There are many proposed strategies for designing good prompts, and here, we will
 
 ## I. Write clear and specific instructions 
 
-Be clear about the task and provide important details or context.
+You must be clear about the task and provide essential details or context.
+
+| Starting prompt | Enhanced version|
+| Summarize the following text| Summarize the following text in a maximum paragraph of 200 words. |
+| How can I create a Questionnaire | Create an anonymous general questionnaire about customer product satisfaction in HTML. Provide comments with short explanations of important code parts.|   
+| How do I calculate mean and standard deviation in Excel? | I have a column for monthly customer spending named "MNTH_SPENDING." Explain how to calculate in Excel the mean spending shown in cell "AVG" and the corresponding standard deviation in the cell called "STD." |
+
+Let us try this. Open a notebook [prompt_design_1.iynb](../notebooks/propt_design_1.ipynb).
+
+
 
 
 
