@@ -22,11 +22,15 @@ author: Ante Panjkota
 navbar-links:
   Lecture materials: "./pro_files/lecture_materials"
   Notebooks: "./notebooks/colab_notebooks"
+  Final Project: "./pro_files/final_project"
   Resources:
     - LangChain: "https://www.langchain.com/"
     - Ollama: "https://ollama.com/"
     - OpenAI: "https://openai.com/"
     - Claude.ai: "https://claude.ai/"
+    - LangChain Hub: "https://smith.langchain.com/hub"
+    - VoiceFlow: "https://www.voiceflow.com/"
+    - BotPress: "https://botpress.com/"
     
   
 
