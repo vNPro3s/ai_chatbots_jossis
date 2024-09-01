@@ -273,4 +273,15 @@ Repeat until obtaining the desired output for the input prompt:
 
 Open the notebook [iterative_propt_design](../notebooks/iterative_prompt_design.ipynb) and run all cells carefully, analyzing each step of the prompt improvement. 
 
+# Promp design for specific tasks
+
+Many tasks can be resolved with efficient, prompt design. Here are just a few:
+
+ - Performing summarization
+ - Performing information extraction
+ - Performing inference
+ - Performing transformation
+ - Expanding the response
+ - Extend conversation (ChatBots)
+
 
