@@ -25,7 +25,7 @@ As in any context, the strategy here refers to high-level planning and decision-
 
 There are many proposed strategies for designing good prompts, and here, we will focus only on some well-known ones.
 
-## Tactic I. Write clear and specific instructions 
+## Strategy I. Write clear and specific instructions 
 
 You must be clear about the task and provide essential details or context.
 
@@ -37,7 +37,7 @@ You must be clear about the task and provide essential details or context.
 Let us try this. Open a notebook [prompt_design_1.iynb](../notebooks/propt_design_1.ipynb), and download `helper functions` in [aux_functions.py](../notebooks/helper_funk/aux_functions.py). Put it under the same folder in the helper_funk/info.txtVSC project folder. 
 
 
-## Tactic II. Use the delimiters 
+## Tactic I. Use the delimiters 
 
 Use the delimiters to indicate distinct parts of the input. Standard delimiters used in the prompt design:
 
@@ -65,7 +65,7 @@ can be classified as positive, negative, or neutral reviews.
 """
 ```
 
-## Tactic III. Specify the length of the response
+## Tactic II. Specify the length of the response
 
 Define the desired length of the produced output from LLMs. Consider the defined length in terms of how many words, sentences, paragraphs, list length, etc., are at the most approximate value to be satisfied. 
 
@@ -89,7 +89,7 @@ Summarize the text delimited by triple quotes in 3 bullet points.
 
 ```
 
-## Tactic IV. Ask for the structured output
+## Tactic III. Ask for the structured output
 
 Sometimes it is helpful to ask the model to produce output in the desired format &rarr; `JSON`, `HTML`, `list`, or some other appropriate format. In previous examples of user reviews, we my be interested in obtaining structured output with pair key-values (JSON file).
 
@@ -116,7 +116,7 @@ opinion: positive, negative or neutral (if not possible to detect, write unable 
 """
 ```
 
-Tactic V. Specify the steps required to complete a task
+Tactic IV. Check the conditions
 
 Check if the input contains instructions, and if it does, write the response in the desired structured format, following the steps in the sequence.
 
@@ -153,5 +153,11 @@ then simply write \"No steps provided.\"
 """
 ```
 
+## Tactic V. Provide examples
+
+
+
+
+# Strategy II. Give model time to "think"
 
 
