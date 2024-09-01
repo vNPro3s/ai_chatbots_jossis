@@ -89,3 +89,8 @@ Summarize the text delimited by triple quotes in 3 bullet points.
 
 ```
 
+## Tactic IV. Ask for the structured output
+
+Sometimes it is helpful to ask the model to produce output in the desired format &rarr; `JSON`, `HTML`, `list`, or some other appropriate format. 
+
+
