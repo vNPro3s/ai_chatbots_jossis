@@ -34,7 +34,7 @@ You must be clear about the task and provide essential details or context.
 | How can I create a Questionnaire | Create an anonymous general questionnaire about customer product satisfaction in HTML. Provide comments with short explanations of important code parts.|   
 | How do I calculate mean and standard deviation in Excel? | I have a column for monthly customer spending named "MNTH_SPENDING." Explain how to calculate in Excel the mean spending shown in cell "AVG" and the corresponding standard deviation in the cell called "STD." |
 
-Let us try this. Open a notebook [prompt_design_1.iynb](../notebooks/propt_design_1.ipynb), and download `helper functions` in [aux_functions.py](../notebooks/helper_funk/aux_funtions.py). Put it under the same folder in the helper_funk/info.txtVSC project folder. 
+Let us try this. Open a notebook [prompt_design_1.iynb](../notebooks/propt_design_1.ipynb), and download `helper functions` in [aux_functions.py](../notebooks/helper_funk/aux_functions.py). Put it under the same folder in the helper_funk/info.txtVSC project folder. 
 
 
 
