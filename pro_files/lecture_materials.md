@@ -17,4 +17,4 @@ subtitle: Materials for AI ChatBots Course
 
 3. [AI ChatBots and LLM](./aichatbots_llm.md)
 4. [Prompt design](./prompt_design.md)
-5. [Designin AI ChatBots](./aichatbots_design.md)
+5. [Designing AI ChatBots using AI tools](./aichatbots_design.md)
