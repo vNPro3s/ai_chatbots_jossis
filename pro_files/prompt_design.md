@@ -255,6 +255,9 @@ The student's solution is correct.
 
 Even when you know the strategies and corresponding tactics in prompt development, the first solution is frequently unsatisfying. So, the logical path is toward iterative prompt development. 
 
+[img_iterative](../assets/img/iterative.jpg)
+**Figure 1** Iterative prompt development (Sorce: DeepLeaarning.AI)
+
 
 
 
