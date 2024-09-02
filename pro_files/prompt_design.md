@@ -280,7 +280,7 @@ Many tasks can be resolved with efficient, prompt design. Here are just a few:
  - Performing summarization [summarization notebook](../notebooks/prompt_design/summarizing.ipynb)
  - Performing information extraction &rarr; previous notebook
  - Performing inference [inference notebook](../notebooks/prompt_design/inferring.ipynb)
- - Performing transformation [trensformation notebook](../notebooks/prompt_design/transformation.ipynb)
+ - Performing transformation [trensformation notebook](../notebooks/prompt_design/transforming.ipynb)
  - Expanding the response [expanding notebook](../notebooks/prompt_design/expanding.ipynb)
  - Extend conversation (ChatBots) [chatbots notebook](../notebooks/prompt_design/chatbot.ipynb)
 
