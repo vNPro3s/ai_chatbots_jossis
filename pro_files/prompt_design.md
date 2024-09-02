@@ -277,7 +277,7 @@ Open the notebook [iterative_propt_design](../notebooks/prompt_design/iterative_
 
 Many tasks can be resolved with efficient, prompt design. Here are just a few:
 
- - Performing summarization [summarization notebook](../notebooks/promt_design/summarization.ipynb)
+ - Performing summarization [summarization notebook](../notebooks/promt_design/summarizing.ipynb)
  - Performing information extraction &rarr; previous notebook
  - Performing inference [inference notebook](../notebooks/promt_design/inference.ipynb)
  - Performing transformation [trensformation notebook](../notebooks/promt_design/transformation.ipynb)
