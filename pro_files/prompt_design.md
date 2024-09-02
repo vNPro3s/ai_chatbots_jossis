@@ -281,7 +281,7 @@ Many tasks can be resolved with efficient, prompt design. Here are just a few:
  - Performing information extraction &rarr; previous notebook
  - Performing inference [inference notebook](../notebooks/prompt_design/inferring.ipynb)
  - Performing transformation [trensformation notebook](../notebooks/prompt_design/transformation.ipynb)
- - Expanding the response [explanding notebook](../notebooks/prompt_design/expanding.ipynb)
+ - Expanding the response [expanding notebook](../notebooks/prompt_design/expanding.ipynb)
  - Extend conversation (ChatBots) [chatbots notebook](../notebooks/prompt_design/chatbot.ipynb)
 
 A helpful resource we already used in the hands-on part related to building simple chatbots with LangChain is the [LangSmith Hub](https://smith.langchain.com/hub). It contains many good prompts that can be used freely or modified. It is also an excellent place to obtain experience when developing prompts, and there is a platform for prompt testing.  
