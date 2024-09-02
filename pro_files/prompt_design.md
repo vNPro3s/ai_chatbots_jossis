@@ -271,7 +271,7 @@ Repeat until obtaining the desired output for the input prompt:
  - refine the idea if needed and prompt
 ```
 
-Open the notebook [iterative_propt_design](../notebooks/prompt_design/iterative_prompt_development.ipynb) and run all cells carefully, analyzing each step of the prompt improvement. 
+Open the notebook [iterative_prompt_design](../notebooks/prompt_design/iterative_prompt_development.ipynb) and run all cells carefully, analyzing each step of the prompt improvement. 
 
 # Promp design for specific tasks
 
