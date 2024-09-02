@@ -271,18 +271,18 @@ Repeat until obtaining the desired output for the input prompt:
  - refine the idea if needed and prompt
 ```
 
-Open the notebook [iterative_propt_design](../notebooks/iterative_prompt_design.ipynb) and run all cells carefully, analyzing each step of the prompt improvement. 
+Open the notebook [iterative_propt_design](../notebooks/prompt_design/iterative_prompt_design.ipynb) and run all cells carefully, analyzing each step of the prompt improvement. 
 
 # Promp design for specific tasks
 
 Many tasks can be resolved with efficient, prompt design. Here are just a few:
 
- - Performing summarization
- - Performing information extraction
- - Performing inference
- - Performing transformation
- - Expanding the response
- - Extend conversation (ChatBots)
+ - Performing summarization [summarization notebook](../notebooks/promt_design/summarization.ipynb)
+ - Performing information extraction &rarr; previous notebook
+ - Performing inference [inference notebook](../notebooks/promt_design/inference.ipynb)
+ - Performing transformation [trensformation notebook](../notebooks/promt_design/transformation.ipynb)
+ - Expanding the response [explanding notebook](../notebooks/promt_design/expanding.ipynb)
+ - Extend conversation (ChatBots) [chatbots notebook](../notebooks/promt_design/chatbot.ipynb)
 
 A helpful resource we already used in the hands-on part related to building simple chatbots with LangChain is the [LangSmith Hub](https://smith.langchain.com/hub). It contains many good prompts that can be used freely or modified. It is also an excellent place to obtain experience when developing prompts, and there is a platform for prompt testing.  
 
