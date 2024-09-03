@@ -104,6 +104,56 @@ Explanation: Performance metrics provide a quantitative way to assess the effect
 
 ----
 
-## Final project report
+## Final project report outline 
+
+### Title Page
+  Explanation: The title page should include the project title, course name, student(s) name(s), and submission date.
+### Abstract
+   Explanation: Provide a brief summary of the project, including its purpose, scope, key features, and outcomes. The abstract should give readers a quick overview of what to expect in the report.
+### Table of Contents
+   Explanation: List all the sections and subsections in the report with corresponding page numbers. This helps readers navigate the document.
+### 1. Introduction
+   Explanation: Introduce the project by describing its purpose, significance, and objectives. Include a brief overview of the chatbot's intended use case and target audience.
+    - Project Scope
+      Explanation: Clearly define the scope of the chatbot project. Discuss what functionalities were implemented and what was deferred as future work. This section should set the boundaries for what the project aims to achieve.
+### 2. Literature Review
+   Explanation: Review existing AI chatbots, relevant technologies, and related research. Discuss how your project relates to or differs from these examples. This section provides context and justifies the approach taken in your project.
+### 3. Methodology
+   Explanation: Describe the methodology used in developing the chatbot. Include gathering design requirements, tools, frameworks, and technologies chosen and the rationale behind these choices. Explain the development process, including critical phases:
+#### 3.1. Use-case identification
+     - Specific use cases should be outlined based on stakeholder feedback/interviews and requirement analysis
+#### 3.2. Functional specifications
+     - Explain how you end up with the list of desired functionalities and  shortly describe each one in the list; also highlight future work with appropriate argumentation
+#### 3.3. Design and Architecture
+   Explanation: Present the design and architecture of the chatbot. Include diagrams (e.g., flowcharts, system architecture) to illustrate the overall structure and data flow. Discuss the dialog management system, NLP components, and any external integrations.
+
+#### 3.4. User Interface and Experience
+   Explanation: Discuss the design of the user interface (UI) and the user experience (UX) considerations. Even if the UI/UX design is minimal, describe the choices made and how they contribute to user interaction with the chatbot.
+
+
+### 4. Implementation
+   Explanation: Detail the implementation process, including how each functional and non-functional requirement was addressed. Describe the coding and development practices followed, any challenges encountered, and how they were resolved. If you use a platform for ChatBot implementation, focus on that part.
+
+#### 4.1. Using LLMs in AI ChatBot
+#### 4.2. Handling ChatMemory
+#### 4.3. Knowledge DataBase (and Tools &rarr; just as if)
+#### 4.4. Testing
+   Explanation: Describe the iterative development approach &rarr; must describe the prompt design process.
+
+   **Important** Include the reference on how one can access  your testing model
+
+
+### 5. Challenges and Limitations
+   Explanation: Outline any challenges faced during the project and how they were addressed. Discuss the limitations of the current implementation and what could be improved in future iterations.
+
+### 6. Future Work
+   Explanation: Identify areas for future work, including any functionalities, integrations, or improvements that still need to be completed due to time constraints. Provide a roadmap for how these could be implemented in the future.
+### 7. Conclusion
+   Explanation: Summarize the project's key findings and achievements. Reflect on the overall experience, including what was learned and how the project could impact future work in AI chatbots.
+### References
+   Explanation: List all the sources cited in the report using an appropriate academic citation style (e.g., APA, IEEE). This section ensures proper credit is given for any external information used in the project.
+### Appendices (conditional)
+   Explanation: Include any additional material that supports the report, such as code snippets, detailed test results, user feedback, or extended diagrams. Appendices provide supplementary information without cluttering the main report.
+
 
 
