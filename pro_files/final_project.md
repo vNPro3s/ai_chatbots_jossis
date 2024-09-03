@@ -86,14 +86,17 @@ Explanation: The presentation allows students to showcase their work, demonstrat
 
     **Important** This will take place on the last day of summer school. All Teams need to present their work regardless of their level of accomplishment.
 
+    {: .box-warning}
+    **Note** The planned time for the team's final project presentation and demonstration is 20 minutes, and 10 minutes is for questions and discussion. 
 
-15. Deployment and Hosting Plan
+
+16. Deployment and Hosting Plan
 Requirement: Develop a plan for deploying the chatbot on a suitable platform (e.g., web server, cloud service). Ensure the chatbot is accessible to the target audience.
 Explanation: A deployment plan is essential for moving the chatbot from development to a live environment where it can be tested and used by real users.
 
     **Important** This will be pointed out as future work.
 
-16. Evaluation and Performance Metrics
+17. Evaluation and Performance Metrics
 Requirement: Define clear performance metrics (e.g., accuracy of responses, user satisfaction, task completion rate) and evaluate the chatbot against these metrics.
 Explanation: Performance metrics provide a quantitative way to assess the effectiveness of the chatbot and identify areas for improvement.
 
