@@ -1,3 +1,9 @@
+---
+layout: page
+title: Final project requirements
+subtitle: AI ChatBot design and implementation
+---
+
 # Final project requirements
 
 The final project is highlighted as the major outcome of this course. So, we present project requirements that will help you understand what tasks need to be carried out in the process of developing an AI ChatBot and what functionalities are expected from the final solution. Generally, the final project's acceptable result is expected to have two main parts &rarr; a designed and implemented AI ChatBot and a final project report. In that sense, we'll be able to present separate requirements for the mentioned parts.
