@@ -119,11 +119,14 @@ Explanation: Performance metrics provide a quantitative way to assess the effect
 ### 2. Literature Review
    Explanation: Review existing AI chatbots, relevant technologies, and related research. Discuss how your project relates to or differs from these examples. This section provides context and justifies the approach taken in your project.
 ### 3. Methodology
-   Explanation: Describe the methodology used in developing the chatbot. Include gathering design requirements, tools, frameworks, and technologies chosen and the rationale behind these choices. Explain the development process, including critical phases:
+   Explanation: Describe the methodology used in developing the chatbot. Include gathering design requirements, tools, frameworks, and technologies chosen and the rationale behind these choices. Explain the development process, including critical phases.
+   
 #### 3.1. Use-case identification
      - Specific use cases should be outlined based on stakeholder feedback/interviews and requirement analysis
+     
 #### 3.2. Functional specifications
      - Explain how you end up with the list of desired functionalities and  shortly describe each one in the list; also highlight future work with appropriate argumentation
+     
 #### 3.3. Design and Architecture
    Explanation: Present the design and architecture of the chatbot. Include diagrams (e.g., flowcharts, system architecture) to illustrate the overall structure and data flow. Discuss the dialog management system, NLP components, and any external integrations.
 
