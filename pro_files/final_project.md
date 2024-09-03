@@ -17,14 +17,14 @@ Explanation: Understanding the end users is critical for designing a user-friend
 Requirement: List and describe all the functional requirements of the chatbot, such as the ability to answer FAQs, provide customer support, or perform specific tasks (e.g., booking an appointment, processing an order).
 Explanation: Functional requirements define what the chatbot should do. This list will serve as a checklist during the development and testing phases to ensure all desired functionalities are implemented.
 
-**Important** Due to the relatively short time for AI ChatBot design and implementation during JOSSIS Summer school, some functionalities are expected to be part of future work. You need to clearly mark out what is expected to be done as future work and also provide reasonable arguments for that.
+    **Important** Due to the relatively short time for AI ChatBot design and implementation during JOSSIS Summer school, some functionalities are expected to be part of future work. You need to clearly mark out what is expected to be done as future work and also provide reasonable arguments for that.
 
 
 4. Non-Functional Requirements Specification
 Requirement: Define the non-functional requirements, such as performance (response time), scalability, reliability, usability, and security considerations.
 Explanation: Non-functional requirements ensure the chatbot performs well under expected conditions and provides a good user experience. They also address system constraints and quality attributes.
 
-**Important** As we discussed in the classroom, most of these non-functional specifications are expected to be part of future work.
+    **Important** As we discussed in the classroom, most of these non-functional specifications are expected to be part of future work.
 
 5. Dialog Management and Flow Design
 Requirement: Design and implement a dialog management system to handle different conversation flows, manage context, and support multi-turn interactions.
@@ -34,13 +34,13 @@ Explanation: Dialog management is crucial for maintaining coherent and context-a
 Requirement: Integrate the chatbot with external systems or APIs (e.g., databases, CRM systems, third-party services) as needed to fetch or update information.
 Explanation: Integration allows the chatbot to perform more complex tasks, such as retrieving account information or processing transactions, thus enhancing its functionality and usefulness.
 
-**Important** The AI ChatBot solution may not need any integrations with external systems.
+    **Important** The AI ChatBot solution may not need any integrations with external systems.
 
 7. User Interface and Experience Design
 Requirement: Develop a user-friendly interface for the chatbot, whether it’s a text-based chat window, voice interface, or integrated within an existing platform (e.g., website, mobile app).
 Explanation: A good user interface enhances user engagement and satisfaction. The design should consider ease of use, accessibility, and aesthetics.
 
-**Important** Again, as we discussed in the classroom, teams are expected to have less time for this crucial segment of AI ChatBot development due to the short time for project finalization. This can be pointed out and addressed as future work for the overall quality of the project. Teams that have time to perform UX and UI design can do that.
+    **Important** Again, as we discussed in the classroom, teams are expected to have less time for this crucial segment of AI ChatBot development due to the short time for project finalization. This can be pointed out and addressed as future work for the overall quality of the project. Teams that have time to perform UX and UI design can do that.
 
 8. Error Handling and Recovery Mechanisms
 Requirement: Implement robust error handling and recovery mechanisms to manage unexpected inputs or system errors gracefully.
@@ -54,41 +54,41 @@ Explanation: Personalization can enhance user experience by making interactions 
 Requirement: Conduct performance testing to ensure the chatbot meets specified performance criteria (e.g., response time under different loads). Optimize the chatbot for efficiency.
 Explanation: Performance testing ensures the chatbot can handle expected user loads without degradation in response time or functionality, essential for maintaining user trust.
 
-**Important** It is expected to carry out only fundamental testing procedures (e.g., response speed, quality of the responses, finding better output format, etc.).
+    **Important** It is expected to carry out only fundamental testing procedures (e.g., response speed, quality of the responses, finding better output format, etc.).
 
 11. Security and Privacy Compliance
 Requirement: Ensure the chatbot complies with relevant security standards and privacy regulations (e.g., GDPR, CCPA). Implement data encryption, secure user authentication, and safe data handling practices.
 Explanation: Security and privacy are critical, especially when dealing with sensitive user data. Compliance with regulations protects both the user and the developer from legal and reputational risks.
 
-**Important** This will be pointed out as future work.
+    **Important** This will be pointed out as future work.
 
 12. User Feedback Mechanism
 Requirement: Implement a mechanism for collecting user feedback on the chatbot’s performance and usability.
 Explanation: Feedback is valuable for continuous improvement. This feature allows developers to understand user pain points and areas for enhancement.
 
-**Important** This will be pointed out as future work.
+    **Important** This will be pointed out as future work.
 
 13. Documentation and User Guide
 Requirement: Provide comprehensive documentation, including a user guide, technical documentation, and developer notes.
 Explanation: Documentation is essential for future maintenance, updates, and for users to understand how to interact effectively with the chatbot.
 
-**Important** This is not expected as one of the outcomes from teams. Teams will only submit corresponding, simplified documents (final project report)
+    **Important** This is not expected as one of the outcomes from teams. Teams will only submit corresponding, simplified documents (final project report)
 
 14. Project Presentation and Demonstration
 Requirement: Prepare a final presentation that includes a live demonstration of the chatbot’s capabilities, a summary of the design and development process, challenges faced, and lessons learned.
 Explanation: The presentation allows students to showcase their work, demonstrate the functionality of the chatbot, and articulate their learning journey, reflecting both technical and soft skills.
 
-**Important** This will take place on the last day of summer school. All Teams need to present their work regardless of their level of accomplishment.
+    **Important** This will take place on the last day of summer school. All Teams need to present their work regardless of their level of accomplishment.
 
 
 15. Deployment and Hosting Plan
 Requirement: Develop a plan for deploying the chatbot on a suitable platform (e.g., web server, cloud service). Ensure the chatbot is accessible to the target audience.
 Explanation: A deployment plan is essential for moving the chatbot from development to a live environment where it can be tested and used by real users.
 
-**Important** This will be pointed out as future work.
+    **Important** This will be pointed out as future work.
 
 16. Evaluation and Performance Metrics
 Requirement: Define clear performance metrics (e.g., accuracy of responses, user satisfaction, task completion rate) and evaluate the chatbot against these metrics.
 Explanation: Performance metrics provide a quantitative way to assess the effectiveness of the chatbot and identify areas for improvement.
 
-**Important** This will be pointed out as future work.
+    **Important** This will be pointed out as future work.
