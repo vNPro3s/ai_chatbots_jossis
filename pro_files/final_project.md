@@ -160,7 +160,7 @@ Explanation: Performance metrics provide a quantitative way to assess the effect
 
 # Final project template
 
-Template for final project report in docx format &Rarr; [Final_Project_Report_Template](../assets/AI_CHATBOTS_JOSSIS-24_Final_report_template.docx)
+Template for final project report in docx format &rarr; [Final_Project_Report_Template](../assets/AI_CHATBOTS_JOSSIS-24_Final_report_template.docx)
 
 
 
