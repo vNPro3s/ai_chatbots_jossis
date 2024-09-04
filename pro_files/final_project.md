@@ -158,7 +158,7 @@ Explanation: Performance metrics provide a quantitative way to assess the effect
 ### Appendices (conditional)
    Explanation: Include any additional material that supports the report, such as code snippets, detailed test results, user feedback, or extended diagrams. Appendices provide supplementary information without cluttering the main report.
 
-# Final project template
+# Final project report template
 
 Template for final project report in docx format &rarr; [Final_Project_Report_Template](../assets/AI_CHATBOTS_JOSSIS-24_Final_report_template.docx)
 
