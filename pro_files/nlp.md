@@ -24,3 +24,5 @@ have tools for chatbots to interpret, analyze, and generate human language, allo
 
 ![img_calendar_entry](../assets/img/calendar_entry.jpg)
 
+3. Sentiment Analysis (e.g. Movie Reviews)
+
