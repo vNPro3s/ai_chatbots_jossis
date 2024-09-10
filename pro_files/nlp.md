@@ -83,7 +83,7 @@ There is a considerable effort in the NLP community to develop efficient and rel
 
 The main problem is that textual data can't be directly processed by computers &rarr; it requires some vectorization. We will discuss this issue more deeply in the AI ChatBots and LLMs (Large Language Models) section. Figures 1 and 3 show this, while Figure 2 depicts the preprocessing phase of text vectorization. 
 
-![raw_text_input](../assets/img/text_classification.jpg)
+![raw_text_input](../assets/img/text_classification_1.jpg)
 
 **Figure 1** Raw text can not be processed directly (WEKA)
 
