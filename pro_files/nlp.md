@@ -8,8 +8,8 @@ subtitle: Short intro to NLP
 
 > Why do we need NLP in AI ChatBots?
 
-The hart of an AI chatbot is its ability to understand and process user inputs, which are typically in the form of natural language (e.g., English, German, Croatian, etc.). Besides that, Natural Language Processing (NLP) 
-have tools for chatbots to interpret, analyze, and generate human language, allowing them to effectively interact with users in a conversational manner.
+The heart of an AI chatbot is its ability to understand and process user inputs, typically in natural language (e.g., English, German, Croatian, etc.). Besides that, Natural Language Processing (NLP) 
+have tools for chatbots to interpret, analyze, and generate human language, allowing them to interact with users effectively in a conversational manner.
 
 > Natural Language Processing (NLP) is an interdisciplinary field that deals with different tasks performed by computers based on content derived from human language.
 
@@ -26,3 +26,6 @@ have tools for chatbots to interpret, analyze, and generate human language, allo
 
 3. Sentiment Analysis (e.g. Movie Reviews)
 
+![movie_reviews](../assets/img/csv_as_df.jpg)
+
+The original dataset is from Kaggle [IMDB Dataset of 50K Movie Reviews](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews?resource=download&select=IMDB+Dataset.csv) and we will use it on `hands-on` afternoon session. 
