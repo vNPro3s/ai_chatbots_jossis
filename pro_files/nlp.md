@@ -32,7 +32,7 @@ The original dataset is from Kaggle [IMDB Dataset of 50K Movie Reviews](https://
 
 In this NLP task, we usually have a human-generated opinion in text format, which can be classified as positive, negative, or neutral sentiment. Other types of sentiment analysis can encompass a wide range of nuances related to sentiment, but in most cases, the three-class analysis is the most common.
 
-![laptop](../assets(img/laptop.jpg)
+![laptop](../assets/img/laptop.jpg)
 
 Attributes: build quality, battery life, keyboard quality, CPU throttling, termal profile
 
