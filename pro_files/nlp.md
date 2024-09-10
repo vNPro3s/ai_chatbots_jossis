@@ -57,10 +57,41 @@ Sentiment analysis has many other names:
  - **Sentiment mining**
  - **Subjectivity analysis**
 
-> In the context of AI ChatBots, in some chat scenarios, it is useful to give the ChatBot an understanding of the user's emotional state and to learn how to respond appropriately. 
+> In the context of AI ChatBots, in some chat scenarios, it is helpful to give the ChatBot an understanding of the user's emotional state and to learn how to respond appropriately. 
 
 4. Machine translation
 
-   
+ - Google translate
+ - Stanford's Phrasal
+ - iTranslate
+ - Microsoft Translator
+ - DeepL Translator
 
+There is a considerable effort in the NLP community to develop efficient and reliable helpers for human translators.
+
+> For AI ChatBots there is sometimes a need to translate user inputs.
+
+
+5. Text Classification
+
+ - Spam detection
+ - Classifying web pages
+ - Classifying content of web pages
+ - Classifying written works
+
+> As pointed out, sentiment analysis is also a text classification task.
+
+The main problem is that textual data can't be directly processed by computers &rarr; it requires some vectorization. We will discuss this issue more deeply in the AI ChatBots and LLMs (Large Language Models) section. Figures 1 and 3 show this, while Figure 2 depicts the preprocessing phase of text vectorization. 
+
+![raw_text_input](../assets/img/text_classification.jpg)
+
+**Figure 1** Raw text can not be processed directly (WEKA)
+
+![filter](../assets/img/string_to_word_vector.jpg)
+
+**Figure 2** Preprocessing raw text using `StringToWordVector` filter in WEKA
+
+![vectorized_training](../assets/img/vectorized_training.jpg)
+
+**Figure 3** Vectorized training data 
 
