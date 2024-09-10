@@ -34,6 +34,33 @@ In this NLP task, we usually have a human-generated opinion in text format, whic
 
 ![laptop](../assets/img/laptop.jpg)
 
-Attributes: build quality, battery life, keyboard quality, CPU throttling, termal profile
+Attributes: build quality, battery life, keyboard quality, CPU throttling, thermal profile
 
-![setiments_laptop](../assets/img/computer_sentiments.jpg)
+![sentiments_laptop](../assets/img/computer_sentiments.jpg)
+
+By scaling attributes with the average rating value, we can obtain a more differentiated overview of each attribute's quality.   
+
+![scaling_att](../assets/img/attributes_sentiment.jpg)
+
+Standard examples of sentiment analysis:
+
+ - Movie reviews &rarr; positive, negative or neutral &Rarr; movie recommendations
+ - Product comparisons &rarr; e.g., scaling attributes
+ - Public sentiment &rarr; How is consumer confidence - is despair increasing? &Rarr; economy crisis prediction
+ - Politics &rarr; what do people think about presidential candidates &Rarr; predicting election results
+ - Market analysis &rarr; predicting market trends from customer opinions
+   
+Sentiment analysis has many other names:
+
+ - **Opinion extraction**
+ - **Opinion mining**
+ - **Sentiment mining**
+ - **Subjectivity analysis**
+
+> In the context of AI ChatBots, in some chat scenarios, it is useful to give the ChatBot an understanding of the user's emotional state and to learn how to respond appropriately. 
+
+4. Machine translation
+
+   
+
+
