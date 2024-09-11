@@ -126,6 +126,7 @@ Results:
 |Random Forest|92.385%|0.962|0.924|
 
 The Random forest model was chosen as the best model according to the evaluation measures in this experiment.
+For now, we can conclude that NLP and ML (DL) or, in general, AI are closely connected! This will be more obvious when we introduce AI ChatBots and LLMs. 
 
 
 
