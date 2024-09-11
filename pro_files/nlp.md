@@ -102,3 +102,5 @@ Now, we want to focus on classification as one of the major tasks in Machine Lea
 ![ML_DL_simply](../assets/img/Learning_ML_DL.jpg)
 
 **Figure 4** Simplified process of learning from data in ML and DL
+
+The model learns from training data by changing its parameters in a broader sense because some objective function needs to be optimized (usually minimized). The independent test dataset evaluates how well the model has learned the task. The main goal is to get a model that performs well on training and test datasets, measured by some performance measure, or we say that it learned to generalize from data. The main problems that can not be avoided in such a process are `overfitting` and `underfitting.`
