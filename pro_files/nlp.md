@@ -15,8 +15,8 @@ have tools for chatbots to interpret, analyze, and generate human language, allo
 
 # Computer tasks in NLP
 
-1. Question Answering (Jeopardy - won by IBM's Watson in 2011.)
-2. Information extraction:
+ 1. Question Answering (Jeopardy - won by IBM's Watson in 2011.)
+ 2. Information extraction:
 
 `The first lecture meeting for NLP will be on Monday, 9th of October, in P39, from 09.30 AM to 11.00 AM.`
 
@@ -24,7 +24,7 @@ have tools for chatbots to interpret, analyze, and generate human language, allo
 
 ![img_calendar_entry](../assets/img/calendar_entry.jpg)
 
-3. Sentiment Analysis (e.g. Movie Reviews)
+ 3. Sentiment Analysis (e.g. Movie Reviews)
 
 ![movie_reviews](../assets/img/csv_as_df.jpg)
 
@@ -59,7 +59,7 @@ Sentiment analysis has many other names:
 
 > In the context of AI ChatBots, in some chat scenarios, it is helpful to give the ChatBot an understanding of the user's emotional state and to learn how to respond appropriately. 
 
-4. Machine translation
+ 4. Machine translation
 
  - Google translate
  - Stanford's Phrasal
@@ -72,7 +72,7 @@ There is a considerable effort in the NLP community to develop efficient and rel
 > For AI ChatBots there is sometimes a need to translate user inputs.
 
 
-5. Text Classification
+ 5. Text Classification
 
  - Spam detection
  - Classifying web pages
