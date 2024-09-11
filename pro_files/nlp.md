@@ -15,8 +15,8 @@ have tools for chatbots to interpret, analyze, and generate human language, allo
 
 # Computer tasks in NLP
 
- ## 1. Question Answering (Jeopardy - won by IBM's Watson in 2011.)
- ## 2. Information extraction:
+ ## Question Answering (Jeopardy - won by IBM's Watson in 2011.)
+ ## Information extraction:
 
 `The first lecture meeting for NLP will be on Monday, 9th of October, in P39, from 09.30 AM to 11.00 AM.`
 
