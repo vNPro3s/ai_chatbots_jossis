@@ -81,7 +81,7 @@ There is a considerable effort in the NLP community to develop efficient and rel
 
 > As pointed out, sentiment analysis is also a text classification task.
 
-The main problem is that textual data can't be directly processed by computers &rarr; it requires some vectorization. We will discuss this issue more deeply in the AI ChatBots and LLMs (Large Language Models) section. Figures 1 and 3 show this, while Figure 2 depicts the preprocessing phase of text vectorization. 
+The main problem is that textual data can't be directly processed by computers &rarr; it requires some vectorization. The AI ChatBots and LLMs (Large Language Models) section will discuss this issue more deeply. Figures 1 and 3 show this, while Figure 2 depicts the preprocessing phase of text vectorization. 
 
 ![raw_text_input](../assets/img/text_classification_1.jpg)
 
@@ -95,3 +95,10 @@ The main problem is that textual data can't be directly processed by computers &
 
 **Figure 3** Vectorized training data 
 
+The process of text vectorization consists of several phases: N-gram detection according to the TF-IDF measure, stop-word removal, stemming, and lemmatization, which is part of the so-called text normalization process. Case folding is the most straightforward normalization process, and it can also be done. This represents NLP techniques used in various NLP tasks, and we will briefly discuss it later in this section. 
+
+Now, we want to focus on classification as one of the major tasks in Machine Learning. Machine learning (ML), with the subfield of deep learning (DL), nowadays represents one of the most advanced fields of artificial intelligence (AI). Vastly simplified, the goal of ML and DL is to develop models that can solve some task (e.g., classification) by learning from data rather than algorithmically coding behavior to them (Figure 4).
+
+![ML_DL_simplified](../assets/img/Learning ML.jpg)
+
+**Figure 4** Simplified process of learning from data in ML and DL
