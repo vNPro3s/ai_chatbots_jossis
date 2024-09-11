@@ -119,7 +119,7 @@ For demonstration, the text dataset [Tweets Dataset for Detection of Cyber-Troll
 
 Results:
 
-|Model|ACC|AUC:F-measure|
+|Model|ACC|AUC|F-measure|
 | :----- | ----: | ----: | ----------: |
 |NB|52.658%|0.663|0.511|
 |KNN (K=3)|71.371%|0.840|0.702|
