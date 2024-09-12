@@ -166,6 +166,15 @@ In essence, intuitively, we know that natural languages have many traps that mak
 10. Domain knowledge
 11. Irony
 
+The Probabilistic Language Model was one of the first successful approaches to coping with the abovementioned problems. The central premise in those models was that some words are more probable than others. 
+
+> P(high winds tonite) > P(large winds tonite)
+
+There is a more probable outcome for the particular sentence.
+
+
+
+
 
 
 
