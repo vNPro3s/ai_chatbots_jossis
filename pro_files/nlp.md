@@ -215,7 +215,10 @@ P(the | that)
 In a bigram model, we are making this approximation:
 𝑃(𝑊_𝑛│𝑊_1^(𝑛−1) )≈𝑃(𝑊_𝑛 |𝑊_(𝑛−1))
 
-This assumption, by which the probability of a word only depends on the previous word, is known as the Markow[^1] assumption. 
+This assumption, by which the probability of a word only depends on the previous word, is known as the Markov[^1] assumption. 
+
+> [!NOTE]
+> Markov models are the class of probabilistic models that assume we can predict the probability of some future unit without looking too far into the past. We can generalize the bigram (which looks one word into the past) n-gram to the trigram (which looks two words into the past) and thus to the n-gram (which looks n−1 words into the past). (Jurafsky and Martin, Ch. 3 – p. 4)
 
 [^1]: Andrey Andreyevich Markov (1856–1922) - famous Russian mathematician
 
