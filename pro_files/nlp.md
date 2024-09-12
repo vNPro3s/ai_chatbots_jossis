@@ -196,7 +196,7 @@ TASK &rarr; compute P(w | h) &rarr; probability of a word w knowing some history
 `h = Economic lessons for the`
 Candidate for `w = future`
 
-P(future | Economic lessons for the) &rarr; abbrv. P(wd | seq)
+P(future|Economic lessons for the) &rarr; abbrv. P(wd|seq)
 
 Estimate probability from the very large corpus by counting relative frequencies.
   - Count the number of occurrences of the `seq` in the corpus
