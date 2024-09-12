@@ -224,8 +224,13 @@ Berkeley Restaurant Project – example from (Jurafsky and Martin[^2], Ch. 3):
 
 ![fig_3_1](../assets/img/Fig_3_1.jpg)
 
+Normalized values with unigrams occurrences.
+
 ![normalized_unigrams](../assets/img/normalized_unigrams.jpg)
 
+Calculating probability:
+
+![probs](../assets/img/probs.jpg)
 
 
 
