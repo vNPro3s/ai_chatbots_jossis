@@ -252,11 +252,13 @@ Parts of speech (also known as POS) and named entities are valuable clues to sen
 Such tasks as assigning a label yi to each word xi in an input word sequence so that the output sequence Y has the same length as the input sequence X are called **sequence labeling tasks**.
 
 ![POS](../assets/img/POS.jpg)
+
 **Figure 6** POS example from the book [^2]
 
 Words are ambiguous &rarr; have more than one possible POS tag. For example, book can be a `verb` (***book*** that flight) or a `noun` (hand me that ***book***).
 
 ![NER](../assets/img/NER.jpg)
+
 **Figure 7** Example of the NER process
 
 The afternoon `hands-on` session will show more on POS and NER. 
