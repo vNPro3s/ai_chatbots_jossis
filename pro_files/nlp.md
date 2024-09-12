@@ -144,13 +144,27 @@ Par: To retain human innate creativity and productivity after a certain age, you
 Org: The stock market is up this quarter, and overall trading exchange rose by 3%, while real estate demand skyrocketed.
 Sum: The Economy is excellent!
 
-Summarization and paraphrasing require some text generation. In fact, text generation is a core task related to AI ChatBots. 
+Summarization and paraphrasing require some text generation. Text generation is a core task related to AI ChatBots. 
 
 > **Important:** How hard are NLP tasks?
 
 ![tasks](../assets/img/tasks.jpg)
 
 **Figure 5** Progress according to the difficulty of the problems in NLP (Prof. Dr. Siegfried Handschuh)
+
+In essence, intuitively, we know that natural languages have many traps that make everyday communication, especially listed NLP tasks, very difficult. Here are some reasons why NLP have a hard time resolving problems related to natural languages:
+
+1. Human language is abundant with ambiguity
+2. Existence of idioms (e.g., get cold feet)
+3. Slang language (e.g., Michael Jordan is the GOAT)
+4. Nonstandard words (would-a, gonna, etc.)
+5. Tricky names (Let it be was remastered in ....)
+6. Nelogisms (retweet, bromance, etc.)
+7. Segmentation issues (the Los Angeles Lakers-Clippers rivalry)
+8. Dialects
+9. Cultural context
+10. Domain knowledge
+11. Irony
 
 
 
