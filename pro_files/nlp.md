@@ -199,8 +199,25 @@ Candidate for `w = future`
 P(future | Economic lessons for the) &rarr; abbrv. P(wd | seq)
 
 Estimate probability from the very large corpus by counting relative frequencies.
-  - Count the number of occurrences of the seq in the corpus
-  - Count the number of times when seq is followed by wd	
+  - Count the number of occurrences of the `seq` in the corpus
+  - Count the number of times when `seq` is followed by `wd`	
+
+There is so much counting, and with a handy approach known as the `chain rule,` estimating probabilities is again unpractical. But, N-grams offer solution &rarr; `instead of computing the probability of a word given its entire history, approximate the history by just the last few words`.
+
+Bigram model &rarr; approximates the probability of a word given all the previous words by using only the conditional probability of the preceding word 𝑃(𝑊_𝑛│𝑊_(𝑛−1)).
+
+Instead computing:
+ P(the | Walden Pond’s water is so transparent that)
+ 
+Approximate it with:
+P(the | that)
+
+In a bigram model, we are making this approximation:
+𝑃(𝑊_𝑛│𝑊_1^(𝑛−1) )≈𝑃(𝑊_𝑛 |𝑊_(𝑛−1))
+
+This assumption, by which the probability of a word only depends on the previous word, is known as the Markow[^1] assumption. 
+
+[^1]: Andrey Andreyevich Markov (1856–1922) - famous Russian mathematician
 
 
 
