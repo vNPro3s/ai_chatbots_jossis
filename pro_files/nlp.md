@@ -232,6 +232,34 @@ Calculating probability:
 
 ![probs](../assets/img/probs.jpg)
 
+Again, we agree that rules exist in every language that defines sentence construction mechanisms and related meanings. In the N-gram model, some order is preserved, but the semantical meaning generally is not. There are universal functions or roles of particular words or morphemes in languages:
+
+```Nouns, verbs, adverbs, pronouns, prepositions, adverbs, articles, etc.```
+
+Here, we are talking about `Part of Speech` because words can be classified based on the universal taxonomy of the speech/text. On the other hand, speech frequently brings some names into focus. Proper detection of names is an essential linguistic category.
+
+ - Usually multiword phrase (e.g., Los Angeles, University of Zadar, Big Ben, …)
+
+Any entity in the real or virtual world can be named! The problem of ambiguity:
+ - Washington &rarr; Person? City? State? University?
+
+Parts of speech (also known as POS) and named entities are valuable clues to sentence structure and meaning. Knowing whether a word is a noun or a verb tells us about likely neighboring words (nouns in English are preceded by determiners and adjectives, verbs by nouns) and syntactic structure (verbs have dependency links to nouns), making part-of-speech tagging an essential aspect of parsing. Emphasizing names gives a more relevant set of information - Named entity recognition (NER). Both approaches are important in answering questions, extracting information, translating, etc. &rarr; hand by hand processes in building understanding from speech/text.
+
+**Part-of-speech tagging (POS Tagging)** &rarr; taking a sequence of words and assigning each word a part of speech like NOUN, VERB, ADVERB, … 
+
+**Named entity recognition (NER)** &rarr; assigning words or phrases tags like PERSON, LOCATION, ORGANIZATION, …
+
+Such tasks as assigning a label yi to each word xi in an input word sequence so that the output sequence Y has the same length as the input sequence X are called **sequence labeling tasks**.
+
+![POS](../assets/img/POS.jpg)
+**Figure 6** POS example from the book [^2]
+
+Words are ambiguous &rarr; have more than one possible POS tag. For example, book can be a `verb` (***book*** that flight) or a `noun` (hand me that ***book***).
+
+![NER](../assets/img/NER.jpg)
+**Figure 7** Example of the NER process
+
+The afternoon `hands-on` session will show more on POS and NER. 
 
 
 [^1]: Andrey Andreyevich Markov (1856–1922) - famous Russian mathematician
