@@ -172,6 +172,8 @@ The Probabilistic Language Model was one of the first successful approaches to c
 
 There is a more probable outcome for the particular sentence.
 
+{: .box-success}
+Models that assign probabilities to sentences or sequences of words are called Language Models (LM).
 
 
 
