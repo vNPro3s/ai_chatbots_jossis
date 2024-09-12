@@ -220,7 +220,17 @@ This assumption, by which the probability of a word only depends on the previous
 > [!NOTE]
 > Markov models are the class of probabilistic models that assume we can predict the probability of some future unit without looking too far into the past. We can generalize the bigram (which looks one word into the past) n-gram to the trigram (which looks two words into the past) and thus to the n-gram (which looks n−1 words into the past). (Jurafsky and Martin, Ch. 3 – p. 4)
 
+Berkeley Restaurant Project – example from (Jurafsky and Martin[^2], Ch. 3):
+
+![fig_3_1](../assets/img/Fig_3_1.jpg)
+
+![normalized_unigrams](../assets/img/normalized_unigrams.jpg)
+
+
+
+
 [^1]: Andrey Andreyevich Markov (1856–1922) - famous Russian mathematician
+[^2]: Daniel S. Jurafsky & James H. Martin: Speech and Language Processing: An Introduction to Natural Language Processing, Computational Linguistics, and Speech Recognition, Prentice Hall 2000.
 
 
 
