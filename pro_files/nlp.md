@@ -128,5 +128,31 @@ Results:
 The Random forest model was chosen as the best model according to the evaluation measures in this experiment.
 For now, we can conclude that NLP and ML (DL) or, in general, AI are closely connected! This will be more obvious when we introduce AI ChatBots and LLMs. 
 
+Classification in NLP can also been generalized as follows:
+
+ - **Classifying whole sentences:** Getting the sentiment of a review, detecting if an email is spam or not, classifying web content,  determining if a sentence is grammatically correct or whether two sentences are logically related or not
+ - **Classifying each word in a sentence:** Identifying the grammatical component of a sentence (noun, verb, adjective &rarr; Part of Speach Tagging, POS), or the named entities (person, location, organisation &rarr; Named Entity Recognition, NER)
+
+## 6. Paraphrasing
+
+Org: Reading, after a certain age, diverts the mind too much from its creative pursuits. Any man who reads too much and uses his own brain too little falls into lazy habits of thinking. (Albert Einstein)
+
+Par: To retain human innate creativity and productivity after a certain age, you need to be more willing to think rather than read too much.
+
+## 7. Summarization
+
+Org: The stock market is up this quarter, and overall trading exchange rose by 3%, while real estate demand skyrocketed.
+Sum: The Economy is excellent!
+
+Summarization and paraphrasing require some text generation. In fact, text generation is a core task related to AI ChatBots. 
+
+> **Important:** How hard are NLP tasks?
+
+![tasks](../assets/img/tasks.jpg)
+
+**Figure 5** Progress according to the difficulty of the problems in NLP (Prof. Dr. Siegfried Handschuh)
+
+
+
 
 
