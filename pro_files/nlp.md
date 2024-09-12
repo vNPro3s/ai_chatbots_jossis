@@ -175,6 +175,34 @@ There is a more probable outcome for the particular sentence.
 {: .box-success}
 Models that assign probabilities to sentences or sequences of words are called Language Models (LM).
 
+GOAL &rarr; Compute the probability of a sentence or sequence of words
+P(W) = P(w1, w2, w3, …, wn)
+
+Related task &rarr; probability of an upcoming word:
+P(w5 | w1, w2, w3, w4)
+
+It is more practical to observe sequences of N-words &rarr; N-grams.
+
+ * 2 – gram  (bigram) &rarr;  "challenging times" , "this presentation"
+ * 3 – gram (trigram) &rarr; "flip these books"
+
+What are the challenges related to N-grams?
+ * To calculate the probability of the N-gram
+ * To calculate the probability of the last word in N-gram
+
+The question is: How do we compute these probabilities?
+
+TASK &rarr; compute P(w | h) &rarr; probability of a word w knowing some history h
+`h = Economic lessons for the`
+Candidate for `w = future`
+
+P(future | Economic lessons for the) &rarr; abbrv. P(wd | seq)
+
+Estimate probability from the very large corpus by counting relative frequencies.
+  - Count the number of occurrences of the seq in the corpus
+  - Count the number of times when seq is followed by wd	
+
+
 
 
 
