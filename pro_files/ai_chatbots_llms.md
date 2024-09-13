@@ -359,7 +359,7 @@ plt.show();
 
 Again, we can plot embeddings after finishing training:
 
-![emb_training](../assets/img/emg_training.png)
+![emb_training](../assets/img/emb_training.png)
 
 **Figure 11* Embeddings are showing some regularities learned during training
 
