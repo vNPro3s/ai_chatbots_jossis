@@ -14,6 +14,6 @@ In this course, we focus specifically on text-to-text AI ChatBots while recogniz
 
 The field of ChatBots dates back to the 1960s, and since then, huge advancements have been detected, especially in the last decade. Figure 1 depicts a timeline with major contributions in that field.
 
-[timeline_catbots](../assets/img/timeline_chatbots.jpg)
+![timeline_catbots](../assets/img/timeline_chatbots.jpg)
 
 **Figure 1** Timeline with the origin of different chatbots (Source: Chakraborty, C. et al.,  Overview of Chatbots with special emphasis on artificial intelligence-enabled ChatGPT in medical science, Frontiers in Artificial Intelligence, Volume: 6-2023)
