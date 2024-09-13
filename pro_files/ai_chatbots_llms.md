@@ -269,7 +269,7 @@ for k in range(len(chars)):
 plt.grid('minor')
 ```
 
-![embeddings_rand](../assets/img/emb_rand.png)
+![embeddings_rand](../assets/img/emb_random.png)
 
 **Figure 9** Random embeddings - all letters are scattered with no logical connections
 
