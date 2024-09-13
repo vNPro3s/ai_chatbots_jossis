@@ -103,6 +103,10 @@ class Scalar:
             
         return represent_as
 ```
+Figure 3 shows text in the app, while Figures 4 and 5 depict tokenization with a GPT2 tokenizer. 
 
+![tiktokenizer_text](../assets/img/tiktokenizer_text.jpg)
+
+**Figure 3** Input examples in GPT2 tokenizer
 
 [^1]: Adrian Thompson: ChatGPT for Conversational AI and ChatBots, Packt Publishing, 2024.
