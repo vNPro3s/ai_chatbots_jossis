@@ -68,7 +68,7 @@ Examples:
 
 **Figure 2** Unimodal vs Multimodalk Generative AI systems (Source: Cao, Y., Li, S., Liu, Y., Yan, Z., Dai, Y., Yu, P. S., & Sun, L. (2023). A comprehensive survey of ai-generated content (aigc): A history of generative ai from gan to chatgpt. arXiv preprint arXiv:2303.04226.)
 
-
+Let us return to LLMs as generative AI systems that can forecast and generate the next most probable word following a sequence of words. In fact, there are tokens, not words in play, and we will explain that. 
 
 
 [^1]: Adrian Thompson: ChatGPT for Conversational AI and ChatBots, Packt Publishing, 2024.
