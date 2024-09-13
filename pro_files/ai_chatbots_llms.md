@@ -68,45 +68,20 @@ Examples:
 
 **Figure 2** Unimodal vs Multimodalk Generative AI systems (Source: Cao, Y., Li, S., Liu, Y., Yan, Z., Dai, Y., Yu, P. S., & Sun, L. (2023). A comprehensive survey of ai-generated content (aigc): A history of generative ai from gan to chatgpt. arXiv preprint arXiv:2303.04226.)
 
-Let us return to LLMs as generative AI systems that can forecast and generate the next most probable word following a sequence of words. We will explain that tokens, not words, are in play. Usefull starting point for taking about tokenization is [Tiktokenizer web app](https://tiktokenizer.vercel.app/), and we will introduce following examples:
+Let us return to LLMs as generative AI systems that can forecast and generate the next most probable word following a sequence of words. We will explain that tokens, not words, are in play. A useful starting point for talking about tokenization is [Tiktokenizer web app](https://tiktokenizer.vercel.app/).
 
-```
-Ｕｎｉｃｏｄｅ! 🅤🅝🅘🅒🅞🅓🅔‽ 🇺‌🇳‌🇮‌🇨‌🇴‌🇩‌🇪! 😄 The very name strikes fear and awe into the hearts of programmers worldwide.
-We all know we ought to “support Unicode” in our software (whatever that means—like using wchar_t for all the strings, right?). 
-
-Nito wo oumono ha itto mo ezu・二兎を追う者は一兎をも得ず
-
-```
-
-```python
-class Scalar:
-    
-    def __init__(self, value:float, operands:Set=None, label:str="", operator:str="") -> None:
-        
-        self.scalar = value
-        self.operands = operands
-        self.label = label
-        self.operator = operator
-        
-    # defining a string representation of this class
-    def __repr__(self) -> str:
-        if self.label == "": 
-            if self.operands is None:
-                represent_as = f"[{self.scalar}]"
-            else:
-                represent_as = f"[{self.scalar} | {self.operands}]"
-        else:
-            if self.operands is None:
-                represent_as = f"[{self.scalar} | {self.label}]"
-            else:
-                represent_as = f"[{self.scalar} | {self.label} | {self.operands} | {self.operator}]"    
-            
-        return represent_as
-```
 Figure 3 shows text in the app, while Figures 4 and 5 depict tokenization with a GPT2 tokenizer. 
 
 ![tiktokenizer_text](../assets/img/tiktokenizer_text.jpg)
 
 **Figure 3** Input examples in GPT2 tokenizer
+
+![tokens_text](../assets/img/tokens_text_1.jpg)
+
+**Figure 4** Tokenization with GPT2 tokenizer of the textual part of the input 
+
+![python_tokend](../assets/img/python_tokens.jpg)
+
+**Figure 5** Tokenization of the input Python code using GPT2 tokenizer
 
 [^1]: Adrian Thompson: ChatGPT for Conversational AI and ChatBots, Packt Publishing, 2024.
