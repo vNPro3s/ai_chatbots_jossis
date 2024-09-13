@@ -140,7 +140,9 @@ First, we can notice the total number of tokens differs &rarr; with the GPT2 tok
 
 The fragmentation of block codes in the GPT2 tokenizer is one of the main reasons GPT2 performed poorly in coding tasks compared to GPT-4o and other LLMs. 
 
-As shown in the above examples, `tokenization` parses input text into meaningful constituent parts called `tokens`. Tokenization is the first step in presenting textual data to the computer for further processing. Besides efficient tokenization, we need a so-called `embedding` layer that consists of all tokens called `vocabulary`. Simplified, the embedding layer can be seen as a table with vocabulary tokens as rows and columns as components of multidimensional vector space. Vector space dimensionality, or embedding dimensionality, is hyper-parameter (e.g., 12288). The embedding layer is usually trained with LLM, so it starts with random values and ends with a meaningful representation of tokens in multidimensional space learned from the training dataset &rarr; for each token, there is a row in the embedding table that is a representation of the token in multidimensional vector space with numerical components. A good example is worth thousands of words, so we will present the described principles and generative process of LLMs in the case of generating new names from the input list of English names[^2].
+As shown in the above examples, `tokenization` parses input text into meaningful constituent parts called `tokens`. Tokenization is the first step in presenting textual data to the computer for further processing. Besides efficient tokenization, we need a so-called `embedding` layer that consists of all tokens called `vocabulary`. Simplified, the embedding layer can be seen as a table with vocabulary tokens as rows and columns as components of multidimensional vector space. Vector space dimensionality, or embedding dimensionality, is hyper-parameter (e.g., 12288). The embedding layer is usually trained with LLM, so it starts with random values and ends with a meaningful representation of tokens in multidimensional space learned from the training dataset &rarr; for each token, there is a row in the embedding table that is a representation of the token in multidimensional vector space with numerical components. 
+
+A good example is worth thousands of words, so we will present the described principles and generative process of LLMs in the case of generating new names from the input list of English names[^2].
 
 Prerequisites (imports and loading data):
 
@@ -272,6 +274,19 @@ plt.grid('minor')
 ![embeddings_rand](../assets/img/emb_random.png)
 
 **Figure 9** Random embeddings - all letters are scattered with no logical connections
+
+Creating training, validation, and testing datasets:
+
+```python
+n1 = int(0.8 * len(X))
+n2 = int(0.9 * len(X))
+Xtr, Ytr = X[:n1], Y[:n1]
+Xval, Yval = X[n1:n2], Y[n1:n2]
+Xtest, Ytest = X[n2:], Y[n2:]
+
+```
+
+As we already learned, the training dataset is used for learning tasks, validation for model selection, tuning hype parameters, and testing datasets for model generalization evaluation.
 
 [^1]: Adrian Thompson: ChatGPT for Conversational AI and ChatBots, Packt Publishing, 2024.
 [^2]: Andrej Karpathy: [Building makemore Part 2: MLP](https://www.youtube.com/watch?v=TCH_1BHY58I&t=99s&ab_channel=AndrejKarpathy)
