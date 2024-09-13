@@ -42,7 +42,7 @@ On the other hand, AI Chatbots, or sometimes Conversational AI-driven Chatbots, 
 
   - Integration with External Systems: NLU systems can connect to external databases, CRMs, or APIs, allowing real-time data retrieval for more personalized and relevant responses.
 
-AI Chatbots are utilized in various sectors, such as customer service, language translation, education, healthcare, banking, insurance, retail, and human resources. 
+AI Chatbots are utilized in various sectors, such as customer service, language translation, education, healthcare, banking, insurance, retail, and human resources. Most modern AI ChatBots are built around a large language models (LLMs), and this course is interested in such systems. 
 
 
 
