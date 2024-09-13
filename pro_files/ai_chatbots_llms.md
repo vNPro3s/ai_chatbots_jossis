@@ -242,9 +242,9 @@ Model definition (MLP):
 
 ```python
 # defining all the paremeters of the model
-num_neurons = 50
-dims = 2
-block_size = 3
+num_neurons = 50 # hyper-parameter
+dims = 2 # hyper-parameter
+block_size = 3 # hyper-parameter
 gen = torch.Generator().manual_seed(3245327)
 # lookup table
 C = torch.randn(len(vocab), dims, generator=gen, requires_grad=True)
@@ -314,8 +314,126 @@ for epoch in range(epochs):
     # update parameters
     for param in parameters:
         param.data -= lr * param.grad
-    if epoch % (epochs // 20) == 0:
-        print(f"Epoch {epoch} | loss {loss.item():.2f}")
+    # change learning rate after 50% of the epochs have passed
+    if epoch == epochs // 2:
+        print("Changing learning rate - learnig rate decay | epoch:", epoch)
+        lr = 0.01	
+    if epoch % (epochs // 300) == 0:
+        print(f"Epoch {epoch} | loss {loss.item():.2f} | lr {lr:.4f}")
+```
+Checking possible overfitting:
+
+```python
+# getting the info for the loss from training 
+with torch.no_grad():
+    emb = C[Xtr]
+    hid_out = torch.tanh(emb.view(-1, block_size * dims) @ W1 + b1)
+    logits = hid_out @ W2 + b2
+    loss = F.cross_entropy(logits, Ytr)
+    print(f"loss on training set: {loss.item():.2f}")
+```
+
+```python
+# getting the info for the loss from validation
+with torch.no_grad():
+    emb = C[Xval]
+    hid_out = torch.tanh(emb.view(-1, block_size * dims) @ W1 + b1)
+    logits = hid_out @ W2 + b2
+    loss = F.cross_entropy(logits, Yval)
+    print(f"loss on validation set: {loss.item():.2f}")
+```
+
+```python
+# ploting the loss
+plt.plot(torch.arange(epochs), losses)
+plt.xlabel("Epochs")
+plt.ylabel("Loss")
+plt.title("Training Loss")
+plt.grid(True)
+plt.show();
+```
+
+![loss_mlp_names](../assets/img/loss_mlp_names.png)
+
+**Figure 10** Losses of the MLP on the training dataset
+
+Again, we can plot embeddings after finishing training:
+
+![emb_training](../assets/img/emg_training.png)
+
+**Figure 11* Embeddings are showing some regularities learned during training
+
+Concrete, learned values for embeddings:
+
+```
+C = tensor([[ 1.1159e+00,  8.4065e-01],
+        [-2.3019e+00, -1.4080e+00],
+        [ 2.7044e-01,  6.9363e-01],
+        [-6.2407e-01,  9.3508e-01],
+        [ 5.4512e-01,  5.5931e-01],
+        [ 5.5758e-01,  3.7794e-03],
+        [ 6.7800e-01,  5.1864e-02],
+        [ 5.0289e-01, -2.4380e-02],
+        [ 5.0642e-01,  4.3905e-01],
+        [ 7.7136e-01,  2.7128e-01],
+        [ 6.9892e-01,  1.4098e-01],
+        [ 4.3370e-01, -1.2451e-01],
+        [ 2.5321e-01,  1.7531e-01],
+        [ 2.6246e-01, -4.9409e-01],
+        [ 6.0975e-01, -1.2370e-02],
+        [ 6.3115e-01,  3.0941e-02],
+        [ 5.9246e-01, -8.3287e-02],
+        [ 3.8874e-01,  1.1245e-02],
+        [ 4.7888e-01,  4.5252e-01],
+        [ 5.3597e-01, -6.0821e-02],
+        [-7.6759e-01, -6.7386e-01],
+        [ 6.4341e-01,  5.8266e-02],
+        [ 6.2043e-01,  1.4239e-01],
+        [ 4.9678e-01, -1.3578e-03],
+        [ 5.3972e-01,  3.4580e-01],
+        [ 5.4296e-01, -2.5705e-01],
+        [ 3.3794e-01, -3.6002e-01],
+        [ 2.8508e-02, -5.4059e-01],
+        [ 4.5952e-01,  4.3354e-01],
+        [ 5.8471e-01,  1.8268e-02]], requires_grad=True)
+
+# character "." has embedding value [1.1159e+00,  8.4065e-01]
+```
+At last, the model can generate names from learned character distributions:
+
+```python
+gen = torch.Generator().manual_seed(330)
+num_to_gen = 10
+for _ in range(num_to_gen):
+    out = []
+    context = [0] * block_size
+    while True:
+        emb = C[torch.tensor([context])]
+        hid_out = torch.tanh(emb.view(-1,block_size*dims) @ W1 + b1)
+        logits = hid_out @ W2 + b2
+        probs = F.softmax(logits, dim=1)
+        ix = torch.multinomial(probs, num_samples=1, generator=gen).squeeze()
+        context = context[1:] + [ix.item()]
+        out.append(ix.item())
+        if ix == 0:
+            break
+    if len(out) > 2:
+        print("".join(idx2ch[k] for k in out[:-1]))    
+```
+
+Output:
+
+```
+alina
+wea
+frt
+megibbereno
+airaciu
+alhalrbaugoknenla
+gase
+elte
+maltinsarratianio
+erra
 ```
 
 [^1]: Adrian Thompson: ChatGPT for Conversational AI and ChatBots, Packt Publishing, 2024.
