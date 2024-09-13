@@ -142,7 +142,50 @@ The fragmentation of block codes in the GPT2 tokenizer is one of the main reason
 
 As shown in the above examples, `tokenization` parses input text into meaningful constituent parts called `tokens`. Tokenization is the first step in presenting textual data to the computer for further processing. Besides efficient tokenization, we need a so-called `embedding` layer that consists of all tokens called `vocabulary`. Simplified, the embedding layer can be seen as a table with vocabulary tokens as rows and columns as components of multidimensional vector space. Vector space dimensionality, or embedding dimensionality, is hyper-parameter (e.g., 12288). The embedding layer is usually trained with LLM, so it starts with random values and ends with a meaningful representation of tokens in multidimensional space learned from the training dataset &rarr; for each token, there is a row in the embedding table that is a representation of the token in multidimensional vector space with numerical components. A good example is worth thousands of words, so we will present the described principles and generative process of LLMs in the case of generating new names from the input list of English names[^2].
 
+Prerequisites (imports and loading data):
 
+```python
+import torch
+import torch.nn.functional as F
+import matplotlib.pyplot as plt
+
+# load data
+with open("names_eng.txt", encoding="utf-8") as fle:
+    names = fle.readlines()
+names = [name.strip().lower() for name in names]
+print(names)
+```
+Here, for simplicity, we will consider each character as a token. Building vocabulary from input dataset:
+
+```python
+all_names = " ".join(names)
+vocab = list(set(all_names))
+vocab.sort()
+vocab.insert(0, ".") #adding special character that denotes the start and end of the names
+print(vocab)
+```
+Ensuring encoding characters to number and decoding back:
+
+```python
+ch2idx = {ch: k for k, ch in enumerate(vocab)}
+idx2ch = {k: ch for k, ch in enumerate(vocab)}
+print(ch2idx)
+print(idx2ch)
+```
+Creating encoder and decoder:
+
+```python
+enc = lambda x: torch.tensor([ch2idx[ch] for ch in x], dtype=torch.long)
+dec = lambda x: "".join([idx2ch[i.item()] for i in x])
+
+# test encoder and decoder
+test = "some string ok."
+encoded = enc(test)
+print(encoded)
+decoded = dec(encoded)
+print(decoded)
+```
+Now, the goal is to obtain a dataset from which our model (MultiLayer Perceptron) can learn to generate new names. That can be done by observing some context  ...
 
 
 [^1]: Adrian Thompson: ChatGPT for Conversational AI and ChatBots, Packt Publishing, 2024.
