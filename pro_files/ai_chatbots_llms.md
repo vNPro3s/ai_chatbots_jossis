@@ -76,7 +76,7 @@ Figure 3 shows text in the app, while Figures 4 and 5 depict tokenization with a
 
 **Figure 3** Input examples in GPT2 tokenizer
 
-![tokens_text](../assets/img/tokens_text_1.jpg)
+![tokens_text](../assets/img/tokens__text_1.jpg)
 
 **Figure 4** Tokenization with GPT2 tokenizer of the textual part of the input 
 
