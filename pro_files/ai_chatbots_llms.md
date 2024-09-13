@@ -68,7 +68,40 @@ Examples:
 
 **Figure 2** Unimodal vs Multimodalk Generative AI systems (Source: Cao, Y., Li, S., Liu, Y., Yan, Z., Dai, Y., Yu, P. S., & Sun, L. (2023). A comprehensive survey of ai-generated content (aigc): A history of generative ai from gan to chatgpt. arXiv preprint arXiv:2303.04226.)
 
-Let us return to LLMs as generative AI systems that can forecast and generate the next most probable word following a sequence of words. In fact, there are tokens, not words in play, and we will explain that. 
+Let us return to LLMs as generative AI systems that can forecast and generate the next most probable word following a sequence of words. We will explain that tokens, not words, are in play. Usefull starting point for taking about tokenization is [Tiktokenizer web app](https://tiktokenizer.vercel.app/), and we will introduce following examples:
+
+```
+Ｕｎｉｃｏｄｅ! 🅤🅝🅘🅒🅞🅓🅔‽ 🇺‌🇳‌🇮‌🇨‌🇴‌🇩‌🇪! 😄 The very name strikes fear and awe into the hearts of programmers worldwide. We all know we ought to “support Unicode” in our software (whatever that means—like using wchar_t for all the strings, right?). 
+
+Nito wo oumono ha itto mo ezu・二兎を追う者は一兎をも得ず
+
+```
+
+```python
+class Scalar:
+    
+    def __init__(self, value:float, operands:Set=None, label:str="", operator:str="") -> None:
+        
+        self.scalar = value
+        self.operands = operands
+        self.label = label
+        self.operator = operator
+        
+    # defining a string representation of this class
+    def __repr__(self) -> str:
+        if self.label == "": 
+            if self.operands is None:
+                represent_as = f"[{self.scalar}]"
+            else:
+                represent_as = f"[{self.scalar} | {self.operands}]"
+        else:
+            if self.operands is None:
+                represent_as = f"[{self.scalar} | {self.label}]"
+            else:
+                represent_as = f"[{self.scalar} | {self.label} | {self.operands} | {self.operator}]"    
+            
+        return represent_as
+```
 
 
 [^1]: Adrian Thompson: ChatGPT for Conversational AI and ChatBots, Packt Publishing, 2024.
