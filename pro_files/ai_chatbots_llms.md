@@ -124,7 +124,7 @@ Byte representation of tokens encoded with utf-8:
 
 We see that the length of encoded code points is larger than the number of code points. The reason is simple &rarr; simple characters e.g., `a` are encoded with one byte, while "complex characters", like `🅤` are encoded with up to 4 bytes. That is why we need to employ some compression &rarr; `Byte pair encoding algorithm`. In that process, many individual tokens are merged (analyze the output of Tiktokenizer for our examples, and that becomes obvious).  We will change the tokenizer to GPT-4o (Figure 7).
 
-[tokenizer_gpt-4o](../assets/img/tokenizer_gpt-4o.jpg)
+![tokenizer_gpt-4o](../assets/img/tokenizer_gpt-4o.jpg)
 
 **Figure 7** Tokenization of the same example with GPT-4o tokenizer
 
