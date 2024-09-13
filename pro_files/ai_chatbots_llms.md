@@ -22,7 +22,7 @@ The first chatbots were restricted to performing only a limited pre-programmed r
 
 On the other hand, AI Chatbots, or sometimes Conversational AI-driven Chatbots, refer to sophisticated technological solutions that enable computers (machines in general) to converse with humans or other machines using natural language. Advancements in various fields, such as NLP, ML, DL, database, and dialog management, led to the rapid development of AI chatbots that solved most of the shortcomings of rule-based chatbots and offered higher flexibility. The core features of conversational AI ChatBots are[^1]:
 
-  - Understanding of Context: NLU systems comprehend the broader context of a conversation, processing words about the surrounding text or dialogue. This enables accurate interpretation of complex or ambiguous input.
+  - Understanding of Context: NLU systems comprehend the broader context of a conversation, processing words about the surrounding text or dialogue. 
 
   - Semantic Understanding: These systems grasp the meaning of words, including synonyms, slang, dialects, and jargon, often through entity recognition, allowing for a more nuanced understanding of user input.
 
@@ -41,6 +41,9 @@ On the other hand, AI Chatbots, or sometimes Conversational AI-driven Chatbots, 
   - Multilingual Capability: Advanced NLU systems can understand and respond in multiple languages, enabling global communication and customer service.
 
   - Integration with External Systems: NLU systems can connect to external databases, CRMs, or APIs, allowing real-time data retrieval for more personalized and relevant responses.
+
+AI Chatbots are used in a wide range of domains, including customer service, language translation, education, healthcare, banking and insurance, retail, and human resources. 
+
 
 
 [^1]: Adrian Thompson: ChatGPT for Conversational AI and ChatBots, Packt Publishing, 2024.
