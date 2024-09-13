@@ -84,4 +84,40 @@ Figure 3 shows text in the app, while Figures 4 and 5 depict tokenization with a
 
 **Figure 5** Tokenization of the input Python code using GPT2 tokenizer
 
+Figure 6 shows that the token for the unique character `🅝` consists of three-byte values. The numerical part represents byte-coded values from the Byte Pair-encoding algorithm applied to UTF-8 byte-coded points of tokens. That algorithm is used for token representation compression. 
+
+For further clarification, let's isolate just a short part of the text, and print all code-point values of characters: 
+
+```python
+text = "Ｕｎｉｃｏｄｅ! 🅤🅝🅘🅒🅞🅓🅔‽ 🇺‌🇳‌🇮‌🇨‌🇴‌🇩‌🇪!"
+print(f"Length of isolated part of the text: {len(text)}")
+code_points = [ord(char) for char in text]
+print(f"Code points:\n{code_points}")
+```
+Output would be:
+
+```
+Length of isolated part of the text: 32
+Code points:
+[65333, 65358, 65353, 65347, 65359, 65348, 65349, 33, 32, 127332, 127325, 127320, 127314, 127326, 127315, 127316, 8253, 32, 127482, 8204, 127475, 8204, 127470, 8204, 127464, 8204, 127476, 8204, 127465, 8204, 127466, 33]
+```
+
+Now, encode that in utf-8 as bytes:
+
+```python
+tokens_utf8 = list(text.encode('utf-8'))
+print(f"Length of isolated part of the text encoded with utf-8: {len(tokens_utf8)}")
+print(f"Byte representation of tokens encoded with utf-8:\n{tokens_utf8}")
+```
+
+Output:
+
+```
+Length of isolated part of the text encoded with utf-8: 102
+Byte representation of tokens encoded with utf-8:
+[239, 188, 181, 239, 189, 142, 239, 189, 137, 239, 189, 131, 239, 189, 143, 239, 189, 132, 239, 189, 133, 33, 32, 240, 159, 133, 164, 240, 159, 133, 157, 240, 159, 133, 152, 240, 159, 133, 146, 240, 159, 133, 158, 240, 159, 133, 147, 240, 159, 133, 148, 226, 128, 189, 32, 240, 159, 135, 186, 226, 128, 140, 240, 159, 135, 179, 226, 128, 140, 240, 159, 135, 174, 226, 128, 140, 240, 159, 135, 168, 226, 128, 140, 240, 159, 135, 180, 226, 128, 140, 240, 159, 135, 169, 226, 128, 140, 240, 159, 135, 170, 33]
+```
+
+We see that the length of encoded code points is larger than the number of code points. The reason is simple &rarr; simple characters e.g., `a` are encoded with one byte, while "complex characters", like `🅤` are encoded with up to 4 bytes. That is the reason why we need to employ some compression &rarr; `Byte pair encoding algorithm`. In that process, many individual tokens are merged (analyze the output of Tiktokenizer for our examples, and that becomes obvious).  We will change the tokenizer to GPT-4o
+
 [^1]: Adrian Thompson: ChatGPT for Conversational AI and ChatBots, Packt Publishing, 2024.
