@@ -130,7 +130,9 @@ We see that the length of encoded code points is larger than the number of code 
 
 First, we can notice the number of total tokens and &rarr with the GPT2 tokenizer, it was 585, and with GPT-4o, it was 317. Close inspection shows that significant compression is because of the improvement in block code tokenization in gpt-4o tokenizer (Figure 8):
 
-![python_tokens_gpt2](../assets/img(python_tokens.jpg) | ![python_tokens_gpt-4o](../assets/img/python_tokens_gpt-4o.jpg)
+|                                                        |                                                                 |
+|:------------------------------------------------------:|:---------------------------------------------------------------:|
+| ![python_tokens_gpt2](../assets/img/python_tokens.jpg) | ![python_tokens_gpt-4o](../assets/img/python_tokens_gpt-4o.jpg) |
 
 **Figure 8** GPT2 tokenizer has more fragmented tokenization of Python block codes compared to GPT-4o tokenizer
 
