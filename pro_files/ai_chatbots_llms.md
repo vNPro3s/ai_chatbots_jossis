@@ -286,7 +286,37 @@ Xtest, Ytest = X[n2:], Y[n2:]
 
 ```
 
-As we already learned, the training dataset is used for learning tasks, validation for model selection, tuning hype parameters, and testing datasets for model generalization evaluation.
+As we already learned, the training dataset is used for learning tasks, validation for model selection, tuning hyper-parameters, and testing datasets for model generalization evaluation. Here, we use validation in the role of the testing dataset. 
+
+Training the model:
+
+```python
+# training the model
+epochs = 3000 # hyper-parameter
+lr = 0.1
+batch_size = 64
+losses = []
+for epoch in range(epochs):
+    # mini-batch gradient descent
+    ix = torch.randint(0, len(Xtr), (batch_size,))
+    # forward pass
+    emb = C[Xtr[ix]]
+    hid_out = torch.tanh(emb.view(-1, dims * block_size) @ W1 + b1)
+    logits = hid_out @ W2 + b2
+    # compute loss
+    loss = F.cross_entropy(logits, Ytr[ix])
+    losses.append(loss.item())
+    # zero out gradients
+    for par in parameters:
+        par.grad = None
+    # backward pass
+    loss.backward()
+    # update parameters
+    for param in parameters:
+        param.data -= lr * param.grad
+    if epoch % (epochs // 20) == 0:
+        print(f"Epoch {epoch} | loss {loss.item():.2f}")
+```
 
 [^1]: Adrian Thompson: ChatGPT for Conversational AI and ChatBots, Packt Publishing, 2024.
 [^2]: Andrej Karpathy: [Building makemore Part 2: MLP](https://www.youtube.com/watch?v=TCH_1BHY58I&t=99s&ab_channel=AndrejKarpathy)
