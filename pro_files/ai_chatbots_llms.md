@@ -361,7 +361,7 @@ Again, we can plot embeddings after finishing training:
 
 ![emb_training](../assets/img/emb_training.png)
 
-**Figure 11* Embeddings are showing some regularities learned during training
+**Figure 11** Embeddings are showing some regularities learned during training
 
 Concrete, learned values for embeddings:
 
