@@ -293,8 +293,8 @@ Training the model:
 ```python
 # training the model
 epochs = 3000 # hyper-parameter
-lr = 0.1
-batch_size = 64
+lr = 0.1 # hyper-parameter
+batch_size = 64 # hyper-parameter
 losses = []
 for epoch in range(epochs):
     # mini-batch gradient descent
