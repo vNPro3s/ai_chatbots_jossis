@@ -71,7 +71,8 @@ Examples:
 Let us return to LLMs as generative AI systems that can forecast and generate the next most probable word following a sequence of words. We will explain that tokens, not words, are in play. Usefull starting point for taking about tokenization is [Tiktokenizer web app](https://tiktokenizer.vercel.app/), and we will introduce following examples:
 
 ```
-Ｕｎｉｃｏｄｅ! 🅤🅝🅘🅒🅞🅓🅔‽ 🇺‌🇳‌🇮‌🇨‌🇴‌🇩‌🇪! 😄 The very name strikes fear and awe into the hearts of programmers worldwide. We all know we ought to “support Unicode” in our software (whatever that means—like using wchar_t for all the strings, right?). 
+Ｕｎｉｃｏｄｅ! 🅤🅝🅘🅒🅞🅓🅔‽ 🇺‌🇳‌🇮‌🇨‌🇴‌🇩‌🇪! 😄 The very name strikes fear and awe into the hearts of programmers worldwide.
+We all know we ought to “support Unicode” in our software (whatever that means—like using wchar_t for all the strings, right?). 
 
 Nito wo oumono ha itto mo ezu・二兎を追う者は一兎をも得ず
 
