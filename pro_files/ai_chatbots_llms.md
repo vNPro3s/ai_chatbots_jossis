@@ -58,11 +58,17 @@ Examples:
  - DALL·E 2 (text &#8614; image)
  - DALL·E 3 (text &#8614; image) `under chatGPT Plus`
  - Midjourney (text &#8614; image) [...](https://www.midjourney.com/)
- - SORA (text &#8614; image)[...](https://openai.com/sora)
+ - SORA (text &#8614; video)[...](https://openai.com/sora)
 
  We can reach the DALL·E 3 model by using [bing &rarr; copilot](https://www.bing.com/new)
 
-**Remark:** Many listed models are multimodal.
+**Remark:** Many listed models are multimodal, and basic differences between unimodal and multimodal models are shown in figure 2.
+
+![uniVsMulti](https://onedrive.live.com/embed?resid=C39637E73EC828A%2169367&authkey=%21AJI48uyXHWC8hgA&width=681&height=362) 
+
+**Figure 2** Unimodal vs Multimodalk Generative AI systems (Source: Cao, Y., Li, S., Liu, Y., Yan, Z., Dai, Y., Yu, P. S., & Sun, L. (2023). A comprehensive survey of ai-generated content (aigc): A history of generative ai from gan to chatgpt. arXiv preprint arXiv:2303.04226.)
+
+
 
 
 [^1]: Adrian Thompson: ChatGPT for Conversational AI and ChatBots, Packt Publishing, 2024.
