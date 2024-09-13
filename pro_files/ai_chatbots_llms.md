@@ -48,6 +48,21 @@ AI Chatbots are utilized in various sectors, such as customer service, language 
 
 When Vaswani et al. published their paper "Attention is All You Need" in 2017, they never imagined the powerful impact of the proposed `Transformer` architecture. Firstly, their focus was only on machine translation, but transformer architecture with derivatives soon showed tremendous potential in many other tasks. It revolutionized natural language processing (NLP) because it can process text data efficiently, capture long-range dependencies in sentences, and work in parallel across sequences. This architecture uses self-attention and positional encoding to analyze relationships between words in a sentence, allowing it to understand context better than previous models. More broadly speaking, LLMs are part of generative AI systems. 
 
-{}
+{: .box-note}
+Generative AI refers to deep learning models that generate text, computer code, 3D simulations, images, audio, or video based on a large amount of representative training data.
+
+Examples:
+
+ - ChatGPT (text 	&#8614; text) [...](https://chat.openai.com/) &rarr; [openai.com](https://openai.com/)
+ - Gemini (text 	&#8614; text) [...](https://gemini.google.com/app)
+ - DALL·E 2 (text &#8614; image)
+ - DALL·E 3 (text &#8614; image) `under chatGPT Plus`
+ - Midjourney (text &#8614; image) [...](https://www.midjourney.com/)
+ - SORA (text &#8614; image)[...](https://openai.com/sora)
+
+ We can reach the DALL·E 3 model by using [bing &rarr; copilot](https://www.bing.com/new)
+
+**Remark:** Many listed models are multimodal.
+
 
 [^1]: Adrian Thompson: ChatGPT for Conversational AI and ChatBots, Packt Publishing, 2024.
