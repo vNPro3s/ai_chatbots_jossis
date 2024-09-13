@@ -128,7 +128,7 @@ We see that the length of encoded code points is larger than the number of code 
 
 **Figure 7** Tokenization of the same examples with GPT-4o tokenizer
 
-First, we can notice the number of total tokens and &rarr with the GPT2 tokenizer, it was 585, and with GPT-4o, it was 317. Close inspection shows that significant compression is because of the improvement in block code tokenization in gpt-4o tokenizer (Figure 8):
+First, we can notice the total number of tokens differs &rarr; with the GPT2 tokenizer, it was 585, and with GPT-4o, it was 317. Close inspection shows that significant compression is mostly due to the improvement in block code tokenization in gpt-4o tokenizer (Figure 8):
 
 |                                                        |                                                                 |
 |:------------------------------------------------------:|:---------------------------------------------------------------:|
@@ -138,9 +138,10 @@ First, we can notice the number of total tokens and &rarr with the GPT2 tokenize
 
 **Figure 8** GPT2 tokenizer (a) has more fragmented tokenization of Python block codes compared to GPT-4o tokenizer (b)
 
-The fragmentation of block codes in the GPT2 tokenizer is one of the main reasons GPT2 performed poorly in coding tasks compared to GPT-4o and other LLMs. As shown in the above examples, `tokenization` parses input text into meaningful constituent parts called `tokens`. Tokenization is the first step in presenting textual data to the computer for further processing. Besides efficient tokenization, we need a so-called `embedding` layer that consists of all tokens called `vocabulary`. Simplified, the embedding layer can be seen as a table with vocabulary tokens as rows and columns as components of multidimensional vector space. Vector space dimensionality, or embedding dimensionality, is hyper-parameter (e.g., 12288). The embedding layer is usually trained with LLM, so it starts with random values and ends with a meaningful representation of tokens in multidimensional space learned from the training dataset &rarr; for each token, there is a row in the embedding table that is a representation of the token in multidimensional vector space with numerical components.    
+The fragmentation of block codes in the GPT2 tokenizer is one of the main reasons GPT2 performed poorly in coding tasks compared to GPT-4o and other LLMs. As shown in the above examples, `tokenization` parses input text into meaningful constituent parts called `tokens`. Tokenization is the first step in presenting textual data to the computer for further processing. Besides efficient tokenization, we need a so-called `embedding` layer that consists of all tokens called `vocabulary`. Simplified, the embedding layer can be seen as a table with vocabulary tokens as rows and columns as components of multidimensional vector space. Vector space dimensionality, or embedding dimensionality, is hyper-parameter (e.g., 12288). The embedding layer is usually trained with LLM, so it starts with random values and ends with a meaningful representation of tokens in multidimensional space learned from the training dataset &rarr; for each token, there is a row in the embedding table that is a representation of the token in multidimensional vector space with numerical components. A good example is worth thousands of words so we will present the described principles and generative process of LLMs in the case of generating new names from the input list of English names[^2].
 
 
 
 
 [^1]: Adrian Thompson: ChatGPT for Conversational AI and ChatBots, Packt Publishing, 2024.
+[^2]: Andrej Karpathy: [Building makemore Part 2: MLP](https://www.youtube.com/watch?v=TCH_1BHY58I&t=99s&ab_channel=AndrejKarpathy)
