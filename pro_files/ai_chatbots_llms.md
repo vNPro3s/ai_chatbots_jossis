@@ -185,8 +185,93 @@ print(encoded)
 decoded = dec(encoded)
 print(decoded)
 ```
-Now, the goal is to obtain a dataset from which our model (MultiLayer Perceptron) can learn to generate new names. That can be done by observing some context  ...
+The goal is to obtain a dataset from which our model (MultiLayer Perceptron, MLP) can learn to generate new names. That can be done by presenting enough examples from which the model can learn the next most probable character to be predicted. This is known as context for prediction (generation). Our context will be three characters. 
 
+```python
+# encoding names into tensors of indices
+block_size = 3 # three characters to predict the next one
+X, Y = [], []
+
+for name in names:
+    # print(name)
+    context = [0] * block_size
+    for ch in name + ".":
+        ix = ch2idx[ch]
+        X.append(context)
+        Y.append(ix)
+        # print("".join([idx2ch[k] for k in context]), "-->", ch)
+        context = context[1:] + [ix]
+X = torch.tensor(X)
+Y = torch.tensor(Y)
+
+```
+For taking only the first two names, the output of the above code (after removing comments) is: 
+
+```
+abagael
+... --> a
+..a --> b
+.ab --> a
+aba --> g
+bag --> a
+aga --> e
+gae --> l
+ael --> .
+abagail
+... --> a
+..a --> b
+.ab --> a
+aba --> g
+bag --> a
+aga --> i
+gai --> l
+ail --> .
+```
+Ok, tokenization is resolved, and the embedding table is on track:
+
+```python
+# embedding lookup table/matrix
+dims = 2 # embedding dimension -> hyper-parameter
+C = torch.randn(len(vocab), dims)
+C.shape
+```
+
+Model definition (MLP): 
+
+```python
+# defining all the paremeters of the model
+num_neurons = 50
+dims = 2
+block_size = 3
+gen = torch.Generator().manual_seed(3245327)
+# lookup table
+C = torch.randn(len(vocab), dims, generator=gen, requires_grad=True)
+# hidden layer
+W1 = torch.randn(dims * block_size, num_neurons, generator=gen, requires_grad=True)
+b1 = torch.randn(num_neurons, generator=gen, requires_grad=True)
+# output layer
+W2 = torch.randn(num_neurons, len(vocab), generator=gen, requires_grad=True)
+b2 = torch.randn(len(vocab), generator=gen, requires_grad=True)
+# all parameters
+parameters = [C, W1, b1, W2, b2]
+# total number of parameters
+total_params = sum([p.numel() for p in parameters])
+print(f"Total number of parameters: {total_params}")
+```
+Initial embeddings are random, and we can show that by plotting in 2D (that is the reason why we decided to take dims = 2):
+
+```python
+# plot embeddings in 2D
+plt.figure(figsize=(10,10))
+plt.scatter(C[:,0].data, C[:,1].data, alpha=0.78, s=350)
+for k in range(len(chars)):
+    plt.text(C[k,0].item(), C[k,1].item(), chars[k], fontsize=12, ha="center", va="center",color="white")
+plt.grid('minor')
+```
+
+![embeddings_rand](../assets/img/emb_rand.png)
+
+**Figure 9** Random embeddings - all letters are scattered with no logical connections
 
 [^1]: Adrian Thompson: ChatGPT for Conversational AI and ChatBots, Packt Publishing, 2024.
 [^2]: Andrej Karpathy: [Building makemore Part 2: MLP](https://www.youtube.com/watch?v=TCH_1BHY58I&t=99s&ab_channel=AndrejKarpathy)
