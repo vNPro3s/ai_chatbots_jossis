@@ -435,7 +435,12 @@ elte
 maltinsarratianio
 erra
 ```
-This example oversimplifies the principles of LLMs and only demonstrates LLMs' internals for educational purposes. 
+This example oversimplifies the principles of LLMs and only demonstrates their internals for educational purposes. A few points remain unexplained to provide a clear picture of LLMs. 
+
+1. The architecture of LLM needs to be defined (usually some derivative of transformer architecture)
+2. Pretrained LLM on a large amount of available data (e.g., Wikipedia, books, web portals, news pages, forums, etc.)
+    -  learn to understand text, learn general language patterns, grammar, and facts about the world, and predict the next most probable word (token) related to the input context.
+3. Supervised Fine - Tuning 
 
 [^1]: Adrian Thompson: ChatGPT for Conversational AI and ChatBots, Packt Publishing, 2024.
 [^2]: Andrej Karpathy: [Building makemore Part 2: MLP](https://www.youtube.com/watch?v=TCH_1BHY58I&t=99s&ab_channel=AndrejKarpathy)
