@@ -119,17 +119,33 @@ Output:
 
 ```
 
-Imagine some longer text, and you will end up with a simple conclusion &rarr; too many tokens, and some of them do not carry any new information (e.g., schema and SCHEMA). 
+Imagine some longer text, and you will end up with a simple conclusion &rarr; too many tokens, and some of them do not carry any new information (e.g., schema and SCHEMA). To resolve that case, folding normalization can be applied.
 
+![Bow_model](../assets7img/Bow_model.jpg)
 
+**Figure 3** Bag of Words (BoW) model &rarr; occurrences of tokens in documents (in this educational case, in sentences)
+
+Simple counting has a sparse matrix as a result of the BoW model, where word order is not preserved. Therefore, the N-gram model, TF-IDF measure, stop-words removal, lemmatization, and stemming are introduced, in addition to the mentioned case folding. 
+
+Lemmatization is the process of reducing words to their morphological base or dictionary form, known as a lemma. Unlike stemming, lemmatization considers the word's context (such as its part of speech) to ensure the correct base form is used. For example, "running" becomes "run," and "better" becomes "good" after lemmatization, as it looks for the meaningful root in context.
+
+Stemming is a simpler, more mechanical process where affixes (prefixes and suffixes) are stripped from a word to produce a stem. It doesn't account for context or the correct grammatical form. For instance, "running" might be reduced to "runn," and "better" might remain unchanged because stemming doesn't understand irregular word forms.
+
+> **REMARK** More on tokenization, TF-IDF measure, stop-words removal, case folding, lemmatization, and stemming will be talked about in hands-on session
+
+The result of `String2WordVector` gives a less sparse matrix compared to the simple BoW model (Figure 4) where value 0 denotes the non-occurrence of N-gram in a tweet, and some other value denotes TF-IDF for that N-gram in an observed tweet. We have only unigrams, bigrams, and trigrams, as was set in the filter.
+
+![features](../assets/img/attributes_filtered.jpg)
+
+**Figure 4** Part of the matrix after applied `String2WordVector` to raw text documents
 
 > IMPORTANT: In the context of LLMs, vectorization is used in a slightly different manner  
 
-Now, we want to focus on classification as one of the major tasks in Machine Learning. Machine learning (ML), with the subfield of deep learning (DL), nowadays represents one of the most advanced fields of artificial intelligence (AI). Vastly simplified, the goal of ML and DL is to develop models that can solve some task (e.g., classification) by learning from data rather than algorithmically coding behavior to them (Figure 4).
+Now, we want to focus on classification as one of the major tasks in Machine Learning. Machine learning (ML), with the subfield of deep learning (DL), nowadays represents one of the most advanced fields of artificial intelligence (AI). Vastly simplified, the goal of ML and DL is to develop models that can solve some task (e.g., classification) by learning from data rather than algorithmically coding behavior to them (Figure 5).
 
 ![ML_DL_simply](../assets/img/Learning_ML_DL.jpg)
 
-**Figure 4** Simplified process of learning from data in ML and DL
+**Figure 5** Simplified process of learning from data in ML and DL
 
 The model learns from training data by changing its parameters in a broader sense because some objective function needs to be optimized (usually minimized). The independent test dataset evaluates how well the model has learned the task. The main goal is to get a model that performs well on training and test datasets, measured by some performance measure, or we say that it learned to generalize from data. The main problems that can not be avoided in such a process are `overfitting` or `underfitting.`
 
@@ -151,7 +167,7 @@ Results:
 The Random forest model was chosen as the best model according to the evaluation measures in this experiment.
 For now, we can conclude that NLP and ML (DL) or, in general, AI are closely connected! This will be more obvious when we introduce AI ChatBots and LLMs. 
 
-Classification in NLP can also been generalized as follows:
+Classification in NLP can also be generalized as follows:
 
  - **Classifying whole sentences:** Getting the sentiment of a review, detecting if an email is spam or not, classifying web content,  determining if a sentence is grammatically correct or whether two sentences are logically related or not
  - **Classifying each word in a sentence:** Identifying the grammatical component of a sentence (noun, verb, adjective &rarr; Part of Speach Tagging, POS), or the named entities (person, location, organisation &rarr; Named Entity Recognition, NER)
@@ -173,7 +189,7 @@ Summarization and paraphrasing require some text generation. Text generation is 
 
 ![tasks](../assets/img/tasks.jpg)
 
-**Figure 5** Progress according to the difficulty of the problems in NLP (Prof. Dr. Siegfried Handschuh)
+**Figure 6** Progress according to the difficulty of the problems in NLP (Prof. Dr. Siegfried Handschuh)
 
 In essence, intuitively, we know that natural languages have many traps that make everyday communication, especially listed NLP tasks, very difficult. Here are some reasons why NLP have a hard time resolving problems related to natural languages:
 
@@ -276,13 +292,13 @@ Such tasks as assigning a label yi to each word xi in an input word sequence so 
 
 ![POS](../assets/img/POS.jpg)
 
-**Figure 6** POS example from the book [^2]
+**Figure 7** POS example from the book [^2]
 
 Words are ambiguous &rarr; have more than one possible POS tag. For example, book can be a `verb` (***book*** that flight) or a `noun` (hand me that ***book***).
 
 ![NER](../assets/img/NER.jpg)
 
-**Figure 7** Example of the NER process
+**Figure 8** Example of the NER process
 
 The afternoon `hands-on` session will show more on POS and NER. 
 
