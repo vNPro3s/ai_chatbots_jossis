@@ -121,7 +121,7 @@ Output:
 
 Imagine some longer text, and you will end up with a simple conclusion &rarr; too many tokens, and some of them do not carry any new information (e.g., schema and SCHEMA). To resolve that case, folding normalization can be applied.
 
-![Bow_model](../assets7img/Bow_model.jpg)
+![Bow_model](../assets/img/Bow_model.jpg)
 
 **Figure 3** Bag of Words (BoW) model &rarr; occurrences of tokens in documents (in this educational case, in sentences)
 
