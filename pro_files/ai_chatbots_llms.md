@@ -435,6 +435,7 @@ elte
 maltinsarratianio
 erra
 ```
+This example oversimplifies the principles of LLMs and only demonstrates LLMs' internals for educational purposes. 
 
 [^1]: Adrian Thompson: ChatGPT for Conversational AI and ChatBots, Packt Publishing, 2024.
 [^2]: Andrej Karpathy: [Building makemore Part 2: MLP](https://www.youtube.com/watch?v=TCH_1BHY58I&t=99s&ab_channel=AndrejKarpathy)
