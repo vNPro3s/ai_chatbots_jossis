@@ -121,9 +121,9 @@ Output:
 
 Imagine some longer text, and you will end up with a simple conclusion &rarr; too many tokens, and some of them do not carry any new information (e.g., schema and SCHEMA). To resolve that case, folding normalization can be applied.
 
-![Bow_model](../assets/img/Bow_model.jpg)
+![Bow_model](../assets/img/BoW_model.jpg)
 
-**Figure 3** Bag of Words (BoW) model &rarr; occurrences of tokens in documents (in this educational case, in sentences)
+**Figure 4** Bag of Words (BoW) model &rarr; occurrences of tokens in documents (in this educational case, in sentences)
 
 Simple counting has a sparse matrix as a result of the BoW model, where word order is not preserved. Therefore, the N-gram model, TF-IDF measure, stop-words removal, lemmatization, and stemming are introduced, in addition to the mentioned case folding. 
 
@@ -133,11 +133,11 @@ Stemming is a simpler, more mechanical process where affixes (prefixes and suffi
 
 > **REMARK** More on tokenization, TF-IDF measure, stop-words removal, case folding, lemmatization, and stemming will be talked about in hands-on session
 
-The result of `String2WordVector` gives a less sparse matrix compared to the simple BoW model (Figure 4) where value 0 denotes the non-occurrence of N-gram in a tweet, and some other value denotes TF-IDF for that N-gram in an observed tweet. We have only unigrams, bigrams, and trigrams, as was set in the filter.
+The result of `String2WordVector` gives a less sparse matrix compared to the simple BoW model (Figure 5) where value 0 denotes the non-occurrence of N-gram in a tweet, and some other value denotes TF-IDF for that N-gram in an observed tweet. We have only unigrams, bigrams, and trigrams, as was set in the filter.
 
 ![features](../assets/img/attributes_filtered.jpg)
 
-**Figure 4** Part of the matrix after applied `String2WordVector` to raw text documents
+**Figure 5** Part of the matrix after applied `String2WordVector` to raw text documents
 
 > IMPORTANT: In the context of LLMs, vectorization is used in a slightly different manner  
 
@@ -145,7 +145,7 @@ Now, we want to focus on classification as one of the major tasks in Machine Lea
 
 ![ML_DL_simply](../assets/img/Learning_ML_DL.jpg)
 
-**Figure 5** Simplified process of learning from data in ML and DL
+**Figure 6** Simplified process of learning from data in ML and DL
 
 The model learns from training data by changing its parameters in a broader sense because some objective function needs to be optimized (usually minimized). The independent test dataset evaluates how well the model has learned the task. The main goal is to get a model that performs well on training and test datasets, measured by some performance measure, or we say that it learned to generalize from data. The main problems that can not be avoided in such a process are `overfitting` or `underfitting.`
 
@@ -189,7 +189,7 @@ Summarization and paraphrasing require some text generation. Text generation is 
 
 ![tasks](../assets/img/tasks.jpg)
 
-**Figure 6** Progress according to the difficulty of the problems in NLP (Prof. Dr. Siegfried Handschuh)
+**Figure 7** Progress according to the difficulty of the problems in NLP (Prof. Dr. Siegfried Handschuh)
 
 In essence, intuitively, we know that natural languages have many traps that make everyday communication, especially listed NLP tasks, very difficult. Here are some reasons why NLP have a hard time resolving problems related to natural languages:
 
@@ -292,13 +292,13 @@ Such tasks as assigning a label yi to each word xi in an input word sequence so 
 
 ![POS](../assets/img/POS.jpg)
 
-**Figure 7** POS example from the book [^2]
+**Figure 8** POS example from the book [^2]
 
 Words are ambiguous &rarr; have more than one possible POS tag. For example, book can be a `verb` (***book*** that flight) or a `noun` (hand me that ***book***).
 
 ![NER](../assets/img/NER.jpg)
 
-**Figure 8** Example of the NER process
+**Figure 9** Example of the NER process
 
 The afternoon `hands-on` session will show more on POS and NER. 
 
