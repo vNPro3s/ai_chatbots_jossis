@@ -141,7 +141,7 @@ The result of `String2WordVector` gives a less sparse matrix compared to the sim
 
 > IMPORTANT: In the context of LLMs, vectorization is used in a slightly different manner  
 
-Now, we want to focus on classification as one of the major tasks in Machine Learning. Machine learning (ML), with the subfield of deep learning (DL), nowadays represents one of the most advanced fields of artificial intelligence (AI). Vastly simplified, the goal of ML and DL is to develop models that can solve some task (e.g., classification) by learning from data rather than algorithmically coding behavior to them (Figure 5).
+Now, we want to focus on classification as one of the major tasks in Machine Learning. Machine learning (ML), with the subfield of deep learning (DL), nowadays represents one of the most advanced fields of artificial intelligence (AI). Vastly simplified, the goal of ML and DL is to develop models that can solve some task (e.g., classification) by learning from data rather than algorithmically coding behavior to them (Figure 6).
 
 ![ML_DL_simply](../assets/img/Learning_ML_DL.jpg)
 
