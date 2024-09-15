@@ -98,7 +98,30 @@ The main problem is that textual data can't be directly processed by computers &
 
 **Figure 3** Vectorized training data 
 
-The process of text vectorization in a broader sense consists of several phases: tokenization, then N-gram detection according to the TF-IDF measure, stop-words removal, stemming, and lemmatization, which is part of the so-called text normalization process. Case folding is the most straightforward normalization process, and it can also be done. This represents NLP techniques used in various NLP tasks, and we will briefly discuss it later in this section. 
+The process of text vectorization in a broader sense consists of several phases: tokenization, then N-gram detection according to the TF-IDF measure, stop-words removal, stemming, and lemmatization, which is part of the so-called text normalization process. Case folding is the most straightforward normalization process, and it can also be done. This represents NLP techniques used in various NLP tasks, and we will briefly explain them here and discuss them in depth during the hands-on sessions.
+
+Firstly, we want to classify text using a "classical" machine learning model (e.g., some decision tree). Some preprocessing is required because computers can not understand and process RAW text. Assume that we can parse input text on the level of individual words &rarr; e.g., `word_tokenize` in action. Take following example:
+
+```python
+import nltk
+from nltk.tokenize import word_tokenize
+# nltk.download('punkt_tab')
+# set the language to english
+text = "Ｕｎｉｃｏｄｅ! 🅤🅝🅘🅒🅞🅓🅔‽ 🇺‌🇳‌🇮‌🇨‌🇴‌🇩‌🇪 is the best coding schema write now, and this SCHEMA is still in development!"
+tokens = word_tokenize(text, language='english')
+print(tokens)
+```
+
+Output:
+
+```
+['Ｕｎｉｃｏｄｅ', '!', '🅤🅝🅘🅒🅞🅓🅔‽', '🇺\u200c🇳\u200c🇮\u200c🇨\u200c🇴\u200c🇩\u200c🇪', 'is', 'the', 'best', 'coding', 'schema', 'write', 'now', ',', 'and', 'this', 'SCHEMA', 'is', 'still', 'in', 'development', '!']
+
+```
+
+Imagine some longer text, and you will end up with a simple conclusion &rarr; too many tokens, and some of them do not carry any new information (e.g., schema and SCHEMA). 
+
+
 
 > IMPORTANT: In the context of LLMs, vectorization is used in a slightly different manner  
 
