@@ -73,4 +73,4 @@ Define if you need the knowledge base to provide AI with specific domain knowled
 
 > In our hands-on sessions, steps 8. and 9. will not be covered, and some limited ways of integration will be explained and demonstrated. 
 
-
+VoiceFlow provides well-organized and extensive [documentation](https://docs.voiceflow.com/docs/welcome) accompanied by many video tutorials. 
