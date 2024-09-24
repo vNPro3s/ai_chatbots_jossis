@@ -35,10 +35,17 @@ Entity Recognition: Identify specific entities in user inputs (e.g., dates, prod
 
 ### 4. Leverage ChatBot with KnowledgeBase
 
-Define if you need the knowledge base to provide AI with specific domain knowledge related to the problem associated with AI Chatbots. Support for different file types, documents, and URL(s) or whole Sitemaps is available. This way, a sort of RAG (Retrieval Augmented Generation) system can be developed. 
+Define if you need the knowledge base to provide AI with specific domain knowledge related to the problem associated with AI Chatbots. Support for different file types, documents, and URL(s) or whole Sitemaps is available. This way, a sort of RAG (Retrieval Augmented Generation) system can be developed (create responses with AI plus Knowledge Base, or complex AI Sets plus Knowledge Base, and finally intelligently integrate blocks for KB Search). 
 
 ### 5. Add Dynamic Content and Integrations
 
   - Use Variables: Voiceflow allows you to store and reference variables (e.g., user’s name, order details) throughout the conversation to personalize interactions.
   - Integrate APIs: APIs can retrieve or send data dynamically, such as by querying a database, fetching real-time information, or sending forms.
   - Add JS Functions (Low-Code): For more complex logic or integrations, you can add custom JavaScript functions to handle data manipulation, API calls, or more detailed workflows.
+
+### 6. Design for Error Handling and Edge Cases
+   - Fallbacks: Always define a fallback for when the bot doesn’t understand the user, such as a “Sorry, I didn’t catch that” message.
+   - Context Management: Manage conversation state with context-based flows, ensuring the bot remembers essential details across multiple exchanges.
+        - This is a problem in VoiceFlow because limited context can be achieved with good organization and usage of user-defined variables and conditions. On the other hand, AI Response blocks can memorize only a short context of the conversation. So, creating a memory block is one way of resolving this problem.
+
+     > Response AI block with Knowledge Base does not offer context management by default!
