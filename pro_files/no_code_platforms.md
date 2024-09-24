@@ -87,7 +87,7 @@ Take special care in choosing an AI model. Different models "eat" tokens at diff
 {: .box-error}
 When changing an AI model, you will need to alter prompts to obtain the desired responses, and sometimes, responses from some models will be very distant from the desired behavior. 
 
-{: box-warning}
+{: .box-warning}
 Simplified: The System prompt in the AI Response block is the model's intentional role or provided context for the response. On the other hand, Prompts are most frequently dynamically generated input content based on user interactions or previous messages in the conversation.
 
 VoiceFlow provides well-organized and extensive [documentation](https://docs.voiceflow.com/docs/welcome) accompanied by many video tutorials. 
