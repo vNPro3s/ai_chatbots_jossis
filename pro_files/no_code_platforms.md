@@ -29,9 +29,10 @@ Define user inputs: Voiceflow supports multiple types of user inputs (text, butt
 Based on user responses, map out different paths. Add conditions to guide users down other paths or decision trees and employ AI as a response defined by a well-designed prompt. 
 
 ### 3. Set Up Intents and Natural Language Understanding (NLU)
-Define Intents: Group possible user inputs into "intents" representing a specific goal, like ordering food or asking for store hours.
-Train NLU: Provide examples of phrases that users might say for each intent—the more diverse the training data, the better the bot’s understanding.
-Entity Recognition: Identify specific entities in user inputs (e.g., dates, product names, locations) and train the bot to recognize and handle them.
+
+   - Define Intents: Group possible user inputs into "intents" representing a specific goal, like ordering food or asking for store hours.
+   - Train NLU: Provide examples of phrases that users might say for each intent—the more diverse the training data, the better the bot’s understanding.
+   - Entity Recognition: Identify specific entities in user inputs (e.g., dates, product names, locations) and train the bot to recognize and handle them.
 
 ### 4. Leverage ChatBot with KnowledgeBase
 
