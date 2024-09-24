@@ -65,7 +65,11 @@ Define if you need the knowledge base to provide AI with specific domain knowled
    - Multi-Platform Deployment: Once satisfied, Voiceflow allows you to deploy your chatbot across multiple platforms, including websites, mobile apps, WhatsApp, Discord, Microsoft Teams, etc.
    - Channel-Specific Optimization: Ensure your chatbot is optimized for the platform it will be deployed on (e.g., voice-specific flows for Alexa, text-based flows for Messenger or web).
 
+From [official VoiceFlow documentation](https://docs.voiceflow.com/docs/voice-deployment-overview):
 
+{: .box-warning}
+**Warning:** Voiceflow does not have a built-in automatic speech recognition (ASR) or speech-to-text (STT) solution. 
+Use a third-party ASR or STT platform to transcribe your users' input before passing it to our APIs to retrieve the next set of responses.
      
 ### 9. Monitor and Optimize
 
@@ -74,6 +78,7 @@ Define if you need the knowledge base to provide AI with specific domain knowled
    - Prompt optimization: Continually try to obtain better AI responses by improving prompts. 
 
 
-> In our hands-on sessions, steps 8. and 9. will not be covered, and some limited ways of integration will be explained and demonstrated. 
+{: .box-success}
+In our hands-on sessions, steps 8. and 9. will not be covered, and some limited ways of integration will be explained and demonstrated. 
 
 VoiceFlow provides well-organized and extensive [documentation](https://docs.voiceflow.com/docs/welcome) accompanied by many video tutorials. 
