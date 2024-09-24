@@ -48,8 +48,26 @@ Define if you need the knowledge base to provide AI with specific domain knowled
    - Context Management: Manage conversation state with context-based flows, ensuring the bot remembers essential details across multiple exchanges.
         - This is a problem in VoiceFlow because limited context management can be achieved with good organization and usage of user-defined variables and conditions. On the other hand, AI Response blocks can memorize only a short context of the conversation. So, creating a memory block is one way of resolving this problem.
 
+
 &nbsp;
 
      > Response AI block with Knowledge Base does not offer context management by default!
 
+### 7. Test and Iterate
 
+   - Test Conversations: Use Voiceflow’s testing tools to simulate interactions and troubleshoot issues such as incorrect intents, broken flows, or variable mismanagement.
+   - Gather Feedback: You can deploy your chatbot in a limited capacity and gather feedback to understand user behavior and improve the bot's accuracy and efficiency.
+   - Improve Based on Data: Regularly review logs and analytics to optimize conversation flows, improve NLU accuracy, optimize prompt design, and refine responses.
+
+### 8. Deploy
+
+   - Multi-Platform Deployment: Once satisfied, Voiceflow allows you to deploy your chatbot across multiple platforms, including websites, mobile apps, and voice platforms like Amazon Alexa and Google Assistant.
+   - Channel-Specific Optimization: Ensure your chatbot is optimized for the platform it will be deployed on (e.g., voice-specific flows for Alexa, text-based flows for Messenger or web).
+     
+### 9. Monitor and Optimize
+
+   - Analytics: Continuously monitor chatbot performance via analytics, identifying areas for improvement, user drop-off points, and engagement rates.
+   - Continuous Training: Based on real-world usage, continue training the NLU with new examples and add additional edge cases or error-handling mechanisms.
+   - Prompt optimization: Continually try to obtain better AI responses by improving prompts. 
+
+In our hands-on sessions, steps 8. and 9. will not be covered, and some limited ways of integration will be explained and demonstrated. 
