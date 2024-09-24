@@ -63,7 +63,7 @@ Define if you need the knowledge base to provide AI with specific domain knowled
 ### 8. Deploy
 
    - Multi-Platform Deployment: Once satisfied, Voiceflow allows you to deploy your chatbot across multiple platforms, including websites, mobile apps, WhatsApp, Discord, Microsoft Teams, etc.
-   - Channel-Specific Optimization: Ensure your chatbot is optimized for the platform it will be deployed on (e.g., voice-specific flows for Alexa, text-based flows for Messenger or web).
+   - Channel-Specific Optimization: Ensure your chatbot is optimized for the platform it will be deployed on (e.g., voice-specific flows for Alexa, text-based flows for Slack or web).
 
 From [official VoiceFlow documentation](https://docs.voiceflow.com/docs/voice-deployment-overview):
 
