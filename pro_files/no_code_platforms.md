@@ -71,6 +71,7 @@ Define if you need the knowledge base to provide AI with specific domain knowled
    - Continuous Training: Based on real-world usage, continue training the NLU with new examples and add additional edge cases or error-handling mechanisms.
    - Prompt optimization: Continually try to obtain better AI responses by improving prompts. 
 
-In our hands-on sessions, steps 8. and 9. will not be covered, and some limited ways of integration will be explained and demonstrated. 
+
+> In our hands-on sessions, steps 8. and 9. will not be covered, and some limited ways of integration will be explained and demonstrated. 
 
 </div>
