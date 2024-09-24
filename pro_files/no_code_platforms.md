@@ -12,4 +12,6 @@ In hands-on sessions related to designing and implementing AI ChatBots using Lan
 2. [Botpress](https://botpress.com/)
 3. [ChatBot](https://www.chatbot.com/)
 
+> **REMARK:** The listed platforms offer low-code functionality implementation, but the standard methodology for designing ChatBots involves using GUI-like elements to build conversational flow. 
+
 One could list many differences among the platforms mentioned, but our focus differs. In hands-on sessions, we will work only with VoiceFlow, an alternative approach for accomplishing the final project related to the listed [Final project requirements](./final_project.md). 
