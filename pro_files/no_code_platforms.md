@@ -31,7 +31,7 @@ Based on user responses, map out different paths. Add conditions to guide users 
 ### 3. Set Up Intents and Natural Language Understanding (NLU)
 
    - Define Intents: Group possible user inputs into "intents" representing a specific goal, like ordering food or asking for store hours.
-   - Train NLU: Provide examples of phrases that users might say for each intent—the more diverse the training data, the better the bot’s understanding.
+   - Train NLU: Provide examples of phrases that users might say for each intent &rarr; the more diverse the training data, the better the bot’s understanding.
    - Entity Recognition: Identify specific entities in user inputs (e.g., dates, product names, locations) and train the bot to recognize and handle them.
 
 ### 4. Leverage ChatBot with KnowledgeBase
@@ -47,7 +47,7 @@ Define if you need the knowledge base to provide AI with specific domain knowled
 ### 6. Design for Error Handling and Edge Cases
    - Fallbacks: Always define a fallback for when the bot doesn’t understand the user, such as a “Sorry, I didn’t catch that” message.
    - Context Management: Manage conversation state with context-based flows, ensuring the bot remembers essential details across multiple exchanges.
-        - This is a problem in VoiceFlow because limited context management can be achieved with good organization and usage of user-defined variables and conditions. On the other hand, AI Response blocks can memorize only a short context of the conversation. So, creating a memory block is one way of resolving this problem.
+        - This is a problem in VoiceFlow because limited context management can be achieved with good organization and usage of predefined or user-defined variables and conditions. On the other hand, AI Response blocks can memorize only a short context of the conversation. So, creating a memory block is one way of resolving this problem.
 
 
 &nbsp;
