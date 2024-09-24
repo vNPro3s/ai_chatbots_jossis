@@ -14,4 +14,22 @@ In hands-on sessions related to designing and implementing AI ChatBots using Lan
 
 > **REMARK:** The listed platforms offer low-code functionality implementation, but the standard methodology for designing ChatBots involves using GUI-like elements to build conversational flow. 
 
-One could list many differences among the platforms mentioned, but our focus differs. In hands-on sessions, we will work only with VoiceFlow, an alternative approach for accomplishing the final project related to the listed [Final project requirements](./final_project.md). 
+One could list many differences among the platforms mentioned, but our focus differs. In hands-on sessions, we will work only with VoiceFlow, an alternative approach for accomplishing the final project related to the listed [Final project requirements](./final_project.md). The primary methodology to design and develop chatbots on Voiceflow is:
+
+### 1. Define the Use Case
+Identify the purpose of your chatbot: Is it for customer service, lead generation, or a more conversational assistant? Define the problem that needs to be solved with a chatbot.
+Set clear goals: What would you like the chatbot to do (e.g., answering FAQs, booking services, recommending products, canceling subscriptions, providing web-shopping support, etc.)?
+
+### 2. Create the Conversational Flow
+
+Use a visualization tool (e.g., [miro](miro.com) )to create conversational flow on a conceptual level. Understanding the desired conversational behavior of the future AI ChatBot is essential without being overwhelmed by the technological implementation nuances. This will be the fundamental starting point for building conversational flow in `VoiceFlow Workplaces.`   
+
+From the conceptual conversational flowchart created, start building an AI ChatBot using Voiceflow’s drag-and-drop interface to create the conversation structure. Each block represents a conversational element, such as messages, questions, or conditions.
+Define user inputs: Voiceflow supports multiple types of user inputs (text, buttons, voice), so decide how users will interact with the bot.
+Map out different paths based on user responses. You can add conditions to guide users down other paths or decision trees and employ AI as a response defined by a well-designed prompt. 
+
+### 3. Leverage ChatBot with KnowledgeBase
+
+Define if you need the knowledge base to provide AI with specific domain knowledge related to the problem associated with AI Chatbots. Support for different file types, documents, and URL(s) or whole Sitemaps is available. This way, a sort of RAG (Retrieval Augmented Generation) system can be developed. 
+
+### 4. 
