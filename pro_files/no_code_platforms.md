@@ -37,7 +37,7 @@ Entity Recognition: Identify specific entities in user inputs (e.g., dates, prod
 
 Define if you need the knowledge base to provide AI with specific domain knowledge related to the problem associated with AI Chatbots. Support for different file types, documents, and URL(s) or whole Sitemaps is available. This way, a sort of RAG (Retrieval Augmented Generation) system can be developed. 
 
-### 4. Add Dynamic Content and Integrations
+### 5. Add Dynamic Content and Integrations
 
   - Use Variables: Voiceflow allows you to store and reference variables (e.g., user’s name, order details) throughout the conversation to personalize interactions.
   - Integrate APIs: APIs can retrieve or send data dynamically, such as by querying a database, fetching real-time information, or sending forms.
