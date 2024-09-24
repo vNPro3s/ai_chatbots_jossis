@@ -46,6 +46,10 @@ Define if you need the knowledge base to provide AI with specific domain knowled
 ### 6. Design for Error Handling and Edge Cases
    - Fallbacks: Always define a fallback for when the bot doesn’t understand the user, such as a “Sorry, I didn’t catch that” message.
    - Context Management: Manage conversation state with context-based flows, ensuring the bot remembers essential details across multiple exchanges.
-        - This is a problem in VoiceFlow because limited context can be achieved with good organization and usage of user-defined variables and conditions. On the other hand, AI Response blocks can memorize only a short context of the conversation. So, creating a memory block is one way of resolving this problem.
+        - This is a problem in VoiceFlow because limited context management can be achieved with good organization and usage of user-defined variables and conditions. On the other hand, AI Response blocks can memorize only a short context of the conversation. So, creating a memory block is one way of resolving this problem.
+
+&nbsp;
 
      > Response AI block with Knowledge Base does not offer context management by default!
+
+
