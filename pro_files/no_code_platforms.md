@@ -3,8 +3,6 @@ layout: page
 title: Designing AI ChatBots using no-code platforms
 subtitle: Basic directions
 ---
-
-<div align="justify">
   
 # Designing AI ChatBots using no-code platforms
 
@@ -75,4 +73,4 @@ Define if you need the knowledge base to provide AI with specific domain knowled
 
 > In our hands-on sessions, steps 8. and 9. will not be covered, and some limited ways of integration will be explained and demonstrated. 
 
-</div>
+
