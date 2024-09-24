@@ -3,7 +3,8 @@ layout: page
 title: Designing AI ChatBots using no-code platforms
 subtitle: Basic directions
 ---
-
+<div align="justify">
+  
 # Designing AI ChatBots using no-code platforms
 
 In hands-on sessions related to designing and implementing AI ChatBots using LangChain and OpenAI API, we show one approach to that process. Specifically, we can use other APIs, such as Hugging Face, Anthropic, Google, Meta LLaMA, Mistral, etc.  In essence, that approach and similar approaches (e.g., RASA) share one characteristic: some knowledge of Python programming. These days, no-code platforms offer an alternative to coding practices for AI ChatBots and AI assistant development and implementation. There are many options among such platforms as:
@@ -71,3 +72,5 @@ Define if you need the knowledge base to provide AI with specific domain knowled
    - Prompt optimization: Continually try to obtain better AI responses by improving prompts. 
 
 In our hands-on sessions, steps 8. and 9. will not be covered, and some limited ways of integration will be explained and demonstrated. 
+
+</div>
