@@ -26,10 +26,19 @@ Use a visualization tool (e.g., [miro](miro.com) )to create conversational flow 
 
 From the conceptual conversational flowchart created, start building an AI ChatBot using Voiceflow’s drag-and-drop interface to make the conversation structure. Each block represents a conversational element, such as messages, questions, or conditions.
 Define user inputs: Voiceflow supports multiple types of user inputs (text, buttons, voice), so decide how users will interact with the bot.
-Map out different paths based on user responses. Add conditions to guide users down other paths or decision trees and employ AI as a response defined by a well-designed prompt. 
+Based on user responses, map out different paths. Add conditions to guide users down other paths or decision trees and employ AI as a response defined by a well-designed prompt. 
 
-### 3. Leverage ChatBot with KnowledgeBase
+### 3. Set Up Intents and Natural Language Understanding (NLU)
+Define Intents: Group possible user inputs into "intents" representing a specific goal, like ordering food or asking for store hours.
+Train NLU: Provide examples of phrases that users might say for each intent—the more diverse the training data, the better the bot’s understanding.
+Entity Recognition: Identify specific entities in user inputs (e.g., dates, product names, locations) and train the bot to recognize and handle them.
+
+### 4. Leverage ChatBot with KnowledgeBase
 
 Define if you need the knowledge base to provide AI with specific domain knowledge related to the problem associated with AI Chatbots. Support for different file types, documents, and URL(s) or whole Sitemaps is available. This way, a sort of RAG (Retrieval Augmented Generation) system can be developed. 
 
-### 4. 
+### 4. Add Dynamic Content and Integrations
+
+  - Use Variables: Voiceflow allows you to store and reference variables (e.g., user’s name, order details) throughout the conversation to personalize interactions.
+  - Integrate APIs: APIs can retrieve or send data dynamically, such as by querying a database, fetching real-time information, or sending forms.
+  - Add JS Functions (Low-Code): For more complex logic or integrations, you can add custom JavaScript functions to handle data manipulation, API calls, or more detailed workflows.
